@@ -333,6 +333,7 @@ function checkCurrentAnswer() {
     };
 
     updateFeedbackForCurrentQuestion();
+    renderQuestionTabs();
 }
 
 function buildIncorrectMessage(question) {
@@ -415,15 +416,26 @@ function arraysMatch(first, second) {
 
 
 function renderQuestionTabs() {
-    const tabs = state.questions.map((question, index) => `
+    const tabs = state.questions.map((question, index) => {
+        const isActive = index === state.currentQuestionIndex;
+        const result = state.checkedAnswers[question.id];
+        let statusClass = "";
+        
+        if (result) {
+            statusClass = result.isCorrect ? "correct" : "incorrect";
+        }
+        
+        return `
         <button
-            class="question-tab ${index === state.currentQuestionIndex ? 'active' : ''}"
+            class="question-tab ${isActive ? 'active' : ''} ${statusClass}"
             data-index="${index}"
             type="button"
+            title="${result ? (result.isCorrect ? 'Respuesta correcta' : 'Respuesta incorrecta') : 'Sin responder'}"
         >
             ${index + 1}
         </button>
-    `).join("");
+    `;
+    }).join("");
 
     elements.questionTabs.innerHTML = tabs;
 
