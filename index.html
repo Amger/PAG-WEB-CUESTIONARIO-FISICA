@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario de Fisica</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <main class="page">
+        <section class="quiz-shell">
+            <header class="hero">
+                <p class="eyebrow">Cuestionario interactivo</p>
+                <h1>Practica de Fisica</h1>
+                <p class="hero-text">
+                    Navega entre preguntas, responde en la misma pagina y comprueba al instante
+                    si tu seleccion es correcta.
+                </p>
+                <div class="loader-panel">
+                    <label class="file-loader" for="json-file-input">
+                        Cargar JSON manualmente
+                    </label>
+                    <input id="json-file-input" type="file" accept=".json,application/json" hidden>
+                    <p class="loader-help">
+                        Si abres la pagina sin servidor local, puedes seleccionar aqui tu archivo
+                        preguntas.json.
+                    </p>
+                </div>
+            </header>
+
+            <section class="quiz-card" aria-live="polite">
+                <div class="quiz-meta">
+                    <span id="question-counter">Pregunta 0 de 0</span>
+                    <span id="question-mode" class="question-mode">Cargando...</span>
+                </div>
+
+                <div class="question-tabs" id="question-tabs"></div>
+
+
+
+                <div class="progress-track" aria-hidden="true">
+                    <div id="progress-bar" class="progress-bar"></div>
+                </div>
+
+                <article id="question-container" class="question-container">
+                    <p class="empty-state">Cargando preguntas...</p>
+                </article>
+
+                <footer class="quiz-actions">
+                    <div class="nav-actions">
+                        <button id="prev-button" class="secondary-button" type="button">Anterior</button>
+                        <button id="next-button" class="secondary-button" type="button">Siguiente</button>
+                    </div>
+
+                    <div class="answer-actions">
+                        <button id="check-button" class="primary-button" type="button">Enviar respuesta</button>
+                    </div>
+                </footer>
+
+                <section id="feedback" class="feedback" aria-live="assertive"></section>
+            </section>
+        </section>
+    </main>
+
+    <script id="preguntas-data" type="application/json">
+{
+    "preguntas":  [
+                      {
+                          "id":  1,
+                          "enunciado":  "Con respecto al campo magnÃ©tico debido a una corriente elÃ©ctrica que circula por un conductor, analice las siguientes afirmaciones:",
+                          "descripcion":  "Indique Verdadero (V) o Falso (F) para cada afirmaciÃ³n.",
+                          "opciones":  [
+                                           {
+                                               "id":  "a",
+                                               "texto":  "Dicho campo, en el Sistema Internacional, se expresa en Tesla.",
+                                               "correcta":  true
+                                           },
+                                           {
+                                               "id":  "b",
+                                               "texto":  "El campo debido a un conductor recto de longitud L responde a B = Fm/(LÂ·I).",
+                                               "correcta":  false
+                                           },
+                                           {
+                                               "id":  "c",
+                                               "texto":  "El aporte que realiza un tramo infinitamente corto del conductor de longitud dr responde a la expresiÃ³n dB = (Âµ0/4Ï�)(Idr Ã— Ã»_r)/rÂ².",
+                                               "correcta":  true
+                                           }
+                                       ]
+                      },
+                      {
+                          "id":  2,
+                          "enunciado":  "Suponga una espira circular de radio a que conduce una corriente I. Analice las siguientes afirmaciones:",
+                          "descripcion":  "Indique Verdadero (V) o Falso (F) para cada afirmaciÃ³n.",
+                          "opciones":  [
+                                           {
+                                               "id":  "a",
+                                               "texto":  "El campo magnÃ©tico es cero en el centro de la espira.",
+                                               "correcta":  false
+                                           },
+                                           {
+                                               "id":  "b",
+                                               "texto":  "dB = (Âµ0Â·I/4Ï�)Â·dx/(xÂ²+aÂ²)",
+                                               "correcta":  false
+                                           },
+                                           {
+                                               "id":  "c",
+                                               "texto":  "El campo magnÃ©tico es mÃ¡ximo a una distancia x = a/âˆš2 del centro de la espira, sobre su eje.",
+                                               "correcta":  false
+                                           },
+                                           {
+                                               "id":  "d",
+                                               "texto":  "Ninguna de las afirmaciones es correcta.",
+                                               "correcta":  true
+                                           }
+                                       ],
+                          "imagen":  "img/Pregunta 2.png"
+                      },
+                      {
+                          "id":  3,
+                          "enunciado":  "En el conductor rectilÃ­neo infinitamente largo de la figura, por el que circula una corriente I, se tiene que:",
+                          "descripcion":  "Indique Verdadero (V) o Falso (F) para cada afirmaciÃ³n.",
+                          "opciones":  [
+                                           {
+                                               "id":  "a",
+                                               "texto":  "El campo magnÃ©tico dentro del conductor no es nulo.",
+                                               "correcta":  true
+                                           },
+                                           {
+                                               "id":  "b",
+                                               "texto":  "El campo magnÃ©tico en 'A' es saliente con respecto al plano de la hoja.",
+                                               "correcta":  false
+                                           },
+                                           {
+                                               "id":  "c",
+                                               "texto":  "El mÃ³dulo del campo magnÃ©tico en 'A' es B = Âµ0Â·IÂ·d.",
+                                               "correcta":  false
+                                           }
+                                       ],
+                          "imagen":  "img/Pregunta 3.png"
+                      }
+                  ]
+}
+    </script>
+    <script src="js/app.js"></script>
+</body>
+</html>
