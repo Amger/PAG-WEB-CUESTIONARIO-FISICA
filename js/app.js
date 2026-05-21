@@ -167,7 +167,7 @@ function normalizeQuestion(question, index) {
         return null;
     }
 
-    const options = question.opciones
+    const options = shuffleArray(question.opciones
         .map((option, optionIndex) => ({
             id: String(option.id ?? optionIndex),
             texto: repairMojibake(option.texto ?? option.label ?? option.respuesta ?? ""),
@@ -176,7 +176,7 @@ function normalizeQuestion(question, index) {
             imagenAlt: repairMojibake(option.imagenAlt ?? option.texto ?? `Opcion ${optionIndex + 1}`),
             descripcionImagen: repairMojibake(option.descripcionImagen ?? null)
         }))
-        .filter((option) => option.texto || option.imagen);
+        .filter((option) => option.texto || option.imagen));
 
     if (!options.length) {
         return null;
@@ -456,6 +456,17 @@ function escapeHtml(text) {
 
 function escapeAttribute(text) {
     return escapeHtml(text);
+}
+
+function shuffleArray(items) {
+    const shuffled = [...items];
+
+    for (let index = shuffled.length - 1; index > 0; index -= 1) {
+        const randomIndex = Math.floor(Math.random() * (index + 1));
+        [shuffled[index], shuffled[randomIndex]] = [shuffled[randomIndex], shuffled[index]];
+    }
+
+    return shuffled;
 }
 
 function renderFormattedText(text) {
