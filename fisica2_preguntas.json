@@ -180,7 +180,8 @@
         },
         {
           "id": "c",
-          "texto": "La integral \\( \\int_A^B \\vec{B} \\cdot d\\vec{l} \\) dará cero siempre que el límite inferior 'A' y el superior 'B' sean iguales."
+          "texto": "La integral \\( \\int_A^B \\vec{B} \\cdot d\\vec{l} \\) dará cero siempre que el límite inferior 'A' y el superior 'B' sean iguales.",
+          "correcta": true
         }
       ]
     },
@@ -215,7 +216,7 @@
         {
           "id": "b",
           "texto": "Se encuentra en equilibrio cuando la espira está ubicada en forma perpendicular a las líneas magnéticas de dicho campo.",
-          "correcta": true
+          "correcta": false
         },
         {
           "id": "c",
