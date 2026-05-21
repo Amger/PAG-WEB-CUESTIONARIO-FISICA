@@ -231,46 +231,48 @@ function renderQuestion() {
                 ${question.descripcion ? `<p>${renderFormattedText(question.descripcion)}</p>` : ""}
             </header>
 
-            <div class="options-list">
-                ${question.opciones.map((option, optionIndex) => `
-                    <div class="option-card">
-                        <div class="option-label">
-                            <div class="option-topline">
-                                <span class="option-text">
-                                    <strong>${String.fromCharCode(65 + optionIndex)}.</strong>
-                                    ${option.texto ? renderFormattedText(option.texto) : ""}
-                                </span>
-                            </div>
-                            ${renderFigure(option.imagen, option.imagenAlt, option.descripcionImagen, "option-figure")}
-                            <div class="option-answer-buttons" role="group" aria-label="Respuesta para la opcion ${String.fromCharCode(65 + optionIndex)}">
-                                <button
-                                    class="answer-toggle ${selectedAnswers[option.id] === true ? "selected true" : ""}"
-                                    data-option-id="${escapeAttribute(option.id)}"
-                                    data-value="true"
-                                    type="button"
-                                >
-                                    Verdadero
-                                </button>
-                                <button
-                                    class="answer-toggle ${selectedAnswers[option.id] === false ? "selected false" : ""}"
-                                    data-option-id="${escapeAttribute(option.id)}"
-                                    data-value="false"
-                                    type="button"
-                                >
-                                    Falso
-                                </button>
+            <div class="question-body${hasQuestionImage ? " has-side-image" : ""}">
+                <div class="options-list">
+                    ${question.opciones.map((option, optionIndex) => `
+                        <div class="option-card">
+                            <div class="option-label">
+                                <div class="option-topline">
+                                    <span class="option-text">
+                                        <strong>${String.fromCharCode(65 + optionIndex)}.</strong>
+                                        ${option.texto ? renderFormattedText(option.texto) : ""}
+                                    </span>
+                                </div>
+                                ${renderFigure(option.imagen, option.imagenAlt, option.descripcionImagen, "option-figure")}
+                                <div class="option-answer-buttons" role="group" aria-label="Respuesta para la opcion ${String.fromCharCode(65 + optionIndex)}">
+                                    <button
+                                        class="answer-toggle ${selectedAnswers[option.id] === true ? "selected true" : ""}"
+                                        data-option-id="${escapeAttribute(option.id)}"
+                                        data-value="true"
+                                        type="button"
+                                    >
+                                        Verdadero
+                                    </button>
+                                    <button
+                                        class="answer-toggle ${selectedAnswers[option.id] === false ? "selected false" : ""}"
+                                        data-option-id="${escapeAttribute(option.id)}"
+                                        data-value="false"
+                                        type="button"
+                                    >
+                                        Falso
+                                    </button>
+                                </div>
                             </div>
                         </div>
+                    `).join("")}
+                </div>
+
+                ${hasQuestionImage ? `
+                    <div class="question-image-side">
+                        ${renderFigure(question.imagen, question.imagenAlt, question.descripcionImagen, "question-figure")}
                     </div>
-                `).join("")}
+                ` : ""}
             </div>
         </div>
-
-        ${hasQuestionImage ? `
-            <div class="question-image-side">
-                ${renderFigure(question.imagen, question.imagenAlt, question.descripcionImagen, "question-figure")}
-            </div>
-        ` : ""}
     `;
 
     renderQuestionTabs();

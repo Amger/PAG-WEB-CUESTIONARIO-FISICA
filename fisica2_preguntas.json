@@ -12,41 +12,37 @@
         },
         {
           "id": "b",
-          "texto": "El campo debido a un conductor recto de longitud L responde a B = Fm/(L·I).",
-          "correcta": false
+          "texto": "El campo debido a un conductor recto de longitud \\(L\\) responde a \\( B = \\frac{F_m}{L \\cdot I} \\)."
         },
         {
           "id": "c",
-          "texto": "El aporte que realiza un tramo infinitamente corto del conductor de longitud dr responde a la expresión dB = (µ0/4π)(Idr × û_r)/r².",
+          "texto": "El aporte que realiza un tramo infinitamente corto del conductor de longitud \\(d\\vec{r}\\) responde a la expresión \\( d\\vec{B} = \\frac{\\mu_0}{4\\pi} \\frac{I\\, d\\vec{r} \\times \\hat{u}_r}{r^2} \\).",
           "correcta": true
         }
       ]
     },
     {
       "id": 2,
-      "enunciado": "Suponga una espira circular de radio a que conduce una corriente I. Analice las siguientes afirmaciones:",
+      "enunciado": "Suponga una espira circular de radio \\(a\\) que conduce una corriente \\(I\\). Analice las siguientes afirmaciones:",
       "descripcion": "Indique Verdadero (V) o Falso (F) para cada afirmación.",
       "opciones": [
         {
           "id": "a",
-          "texto": "El campo magnético es cero en el centro de la espira.",
-          "correcta": false
+          "texto": "El campo magnético es cero en el centro de la espira."
         },
         {
           "id": "b",
-          "texto": "dB = (µ0·I/4π)·dx/(x²+a²)",
-          "correcta": false
+          "texto": "\\( dB = \\frac{\\mu_0 I}{4\\pi} \\frac{dx}{x^2 + a^2} \\)"
         },
         {
           "id": "c",
-          "texto": "El campo magnético es máximo a una distancia x = a/√2 del centro de la espira, sobre su eje.",
-          "correcta": false
+          "texto": "El campo magnético es máximo a una distancia \\( x = \\frac{a}{\\sqrt{2}} \\) del centro de la espira, sobre su eje."
         }
       ]
     },
     {
       "id": 3,
-      "enunciado": "En el conductor rectilíneo infinitamente largo de la figura, por el que circula una corriente I, se tiene que:",
+      "enunciado": "En el conductor rectilíneo infinitamente largo de la figura, por el que circula una corriente \\(I\\), se tiene que:",
       "descripcion": "Indique Verdadero (V) o Falso (F) para cada afirmación.",
       "opciones": [
         {
@@ -56,79 +52,71 @@
         },
         {
           "id": "b",
-          "texto": "El campo magnético en 'A' es saliente con respecto al plano de la hoja.",
-          "correcta": false
+          "texto": "El campo magnético en 'A' es saliente con respecto al plano de la hoja."
         },
         {
           "id": "c",
-          "texto": "El módulo del campo magnético en 'A' es B = µ0·I·d.",
-          "correcta": false
+          "texto": "El módulo del campo magnético en 'A' es \\( B = \\mu_0 I d \\)."
         }
       ]
     },
     {
       "id": 4,
-      "enunciado": "Un hilo conductor recto por el que circula una corriente de intensidad I. Analice las siguientes afirmaciones:",
+      "enunciado": "Un hilo conductor recto por el que circula una corriente de intensidad \\(I\\). Analice las siguientes afirmaciones:",
       "descripcion": "Indique Verdadero (V) o Falso (F) para cada afirmación.",
       "opciones": [
         {
           "id": "a",
-          "texto": "Genera un campo magnético B en la dirección del hilo.",
-          "correcta": false
+          "texto": "Genera un campo magnético \\(\\vec{B}\\) en la dirección del hilo."
         },
         {
           "id": "b",
-          "texto": "No sufre ninguna fuerza magnética en presencia de un campo B paralelo al hilo.",
+          "texto": "No sufre ninguna fuerza magnética en presencia de un campo \\(\\vec{B}\\) paralelo al hilo.",
           "correcta": true
         },
         {
           "id": "c",
-          "texto": "Genera un campo B que no depende de la intensidad de la corriente.",
-          "correcta": false
+          "texto": "Genera un campo \\(\\vec{B}\\) que no depende de la intensidad de la corriente."
         }
       ]
     },
     {
       "id": 5,
-      "enunciado": "La Ley (teorema) de integral de Ampere para los campos magnéticos. Analice las siguientes afirmaciones:",
+      "enunciado": "La Ley (teorema) de integral de Ampère para los campos magnéticos. Analice las siguientes afirmaciones:",
       "descripcion": "Indique Verdadero (V) o Falso (F) para cada afirmación.",
       "opciones": [
         {
           "id": "a",
-          "texto": "Establece que el flujo magnético a través de una superficie cerrada es idénticamente nulo.",
-          "correcta": false
+          "texto": "Establece que el flujo magnético a través de una superficie cerrada es idénticamente nulo."
         },
         {
           "id": "b",
-          "texto": "Permite determinar el campo magnético en el interior de un bobinado toroidal con sus N espiras uniformemente distribuidas a lo largo del toroide.",
+          "texto": "Permite determinar el campo magnético en el interior de un bobinado toroidal con sus \\(N\\) espiras uniformemente distribuidas a lo largo del toroide.",
           "correcta": true
         },
         {
           "id": "c",
-          "texto": "Establece que la integral de circulación del campo magnético (circulación a lo largo de un contorno cerrado) es siempre igual a la carga eléctrica distribuida en un alambre envuelto por el contorno.",
-          "correcta": false
+          "texto": "Establece que la integral de circulación del campo magnético \\( \\oint \\vec{B} \\cdot d\\vec{l} \\) es siempre igual a la carga eléctrica distribuida en un alambre envuelto por el contorno."
         }
       ]
     },
     {
       "id": 6,
-      "enunciado": "La función vectorial V = (3·x·y²·z)î + (2·α·y³·z)ĵ + (x·y)k̂. Analice las siguientes afirmaciones:",
+      "enunciado": "La función vectorial \\( \\vec{V} = (3xy^2z)\\,\\hat{i} + (2\\alpha y^3 z)\\,\\hat{j} + (xy)\\,\\hat{k} \\). Analice las siguientes afirmaciones:",
       "descripcion": "Indique Verdadero (V) o Falso (F) para cada afirmación.",
       "opciones": [
         {
           "id": "a",
-          "texto": "Puede representar un campo magnético solamente si la constante α es nula.",
-          "correcta": false
+          "texto": "Puede representar un campo magnético solamente si la constante \\(\\alpha\\) es nula."
         },
         {
           "id": "b",
-          "texto": "Puede representar un campo magnético a condición que la constante α sea igual a (-1/2).",
+          "texto": "Puede representar un campo magnético a condición que la constante \\(\\alpha\\) sea igual a \\(-\\tfrac{1}{2}\\).",
           "correcta": true
         },
         {
           "id": "c",
-          "texto": "Nunca podría representar un campo magnético.",
-          "correcta": false
+          "texto": "Nunca podría representar un campo magnético."
         }
       ]
     },
@@ -139,8 +127,7 @@
       "opciones": [
         {
           "id": "a",
-          "texto": "Las líneas de campo magnético se pueden cruzar, a diferencia de las líneas de campo eléctrico.",
-          "correcta": false
+          "texto": "Las líneas de campo magnético se pueden cruzar, a diferencia de las líneas de campo eléctrico."
         },
         {
           "id": "b",
@@ -156,7 +143,7 @@
     },
     {
       "id": 8,
-      "enunciado": "Un campo magnético en un punto P se puede determinar mediante una carga de prueba animada con una velocidad v. Analice las siguientes afirmaciones:",
+      "enunciado": "Un campo magnético en un punto P se puede determinar mediante una carga de prueba animada con una velocidad \\(\\vec{v}\\). Analice las siguientes afirmaciones:",
       "descripcion": "Indique Verdadero (V) o Falso (F) para cada afirmación.",
       "opciones": [
         {
@@ -171,19 +158,19 @@
         },
         {
           "id": "c",
-          "texto": "La fuerza resultante es proporcional al producto vectorial del vector velocidad de la carga y el vector campo magnético.",
+          "texto": "La fuerza resultante es proporcional al producto vectorial del vector velocidad de la carga y el vector campo magnético: \\( \\vec{F} \\propto \\vec{v} \\times \\vec{B} \\).",
           "correcta": true
         }
       ]
     },
     {
       "id": 9,
-      "enunciado": "Para el solenoide con N vueltas. Analice las siguientes afirmaciones:",
+      "enunciado": "Para el solenoide con \\(N\\) vueltas. Analice las siguientes afirmaciones:",
       "descripcion": "Indique Verdadero (V) o Falso (F) para cada afirmación.",
       "opciones": [
         {
           "id": "a",
-          "texto": "La integral de Ampère para la curva en rojo será: µ0·I.",
+          "texto": "La integral de Ampère para la curva en rojo será: \\( \\mu_0 I \\).",
           "correcta": true
         },
         {
@@ -193,8 +180,7 @@
         },
         {
           "id": "c",
-          "texto": "La integral ∫(A→B) B·dl dará cero siempre que el límite inferior 'A' y el superior 'B' sean iguales.",
-          "correcta": false
+          "texto": "La integral \\( \\int_A^B \\vec{B} \\cdot d\\vec{l} \\) dará cero siempre que el límite inferior 'A' y el superior 'B' sean iguales."
         }
       ]
     },
@@ -205,30 +191,31 @@
       "opciones": [
         {
           "id": "a",
-          "texto": "El elemento de corriente es un escalar.",
-          "correcta": false
+          "texto": "El elemento de corriente \\(I\\,d\\vec{l}\\) es un escalar."
         },
         {
           "id": "b",
-          "texto": "Si dos conductores paralelos conducen corrientes en el mismo sentido, se repelen uno a otro.",
-          "correcta": false
+          "texto": "Si dos conductores paralelos conducen corrientes en el mismo sentido, se repelen uno a otro."
         },
         {
           "id": "c",
-          "texto": "Suponga 2 alambres paralelos que conducen corrientes como indica la figura. El campo total en el punto P3 tiene un módulo igual a B3 = µ0·I/(3πd).",
-          "correcta": false
+          "texto": "Suponga 2 alambres paralelos que conducen corrientes como indica la figura. El campo total en el punto \\(P_3\\) tiene un módulo igual a \\( B_3 = \\frac{\\mu_0 I}{3\\pi d} \\)."
+        },
+        {
+          "id": "d",
+          "texto": "Ninguna de las afirmaciones es correcta.",
+          "correcta": true
         }
       ]
     },
     {
       "id": 11,
-      "enunciado": "Una espira rectangular que transporta una intensidad de corriente I constante, inmersa en un campo magnético uniforme. Analice las siguientes afirmaciones:",
+      "enunciado": "Una espira rectangular que transporta una intensidad de corriente \\(I\\) constante, inmersa en un campo magnético uniforme. Analice las siguientes afirmaciones:",
       "descripcion": "Indique Verdadero (V) o Falso (F) para cada afirmación.",
       "opciones": [
         {
           "id": "a",
-          "texto": "Experimenta una fuerza resultante Fm = I·B·L en la cual L es la longitud total del conductor que integra la espira.",
-          "correcta": false
+          "texto": "Experimenta una fuerza resultante \\( F_m = I \\cdot B \\cdot L \\) en la cual \\(L\\) es la longitud total del conductor que integra la espira."
         },
         {
           "id": "b",
@@ -237,25 +224,24 @@
         },
         {
           "id": "c",
-          "texto": "Tiene asociado un momento magnético cuya expresión es pm = I·A·û, tal que A es el área limitada por la espira y û es un versor normal al plano de la espira.",
+          "texto": "Tiene asociado un momento magnético cuya expresión es \\( \\vec{p}_m = I \\cdot A \\cdot \\hat{n} \\), tal que \\(A\\) es el área limitada por la espira y \\(\\hat{n}\\) es un versor normal al plano de la espira.",
           "correcta": true
         }
       ]
     },
     {
       "id": 12,
-      "enunciado": "Un átomo de litio ionizado por la pérdida de uno de sus electrones ingresa, con velocidad v0, perpendicularmente a un campo magnético B uniforme, normal y entrante al plano de la figura. Analice las siguientes afirmaciones:",
+      "enunciado": "Un átomo de litio ionizado por la pérdida de uno de sus electrones ingresa, con velocidad \\(v_0\\), perpendicularmente a un campo magnético \\(B\\) uniforme, normal y entrante al plano de la figura. Analice las siguientes afirmaciones:",
       "descripcion": "Indique Verdadero (V) o Falso (F) para cada afirmación.",
       "opciones": [
         {
           "id": "a",
-          "texto": "El ion experimenta una aceleración cuyo módulo responde a a = (e·v0·B)/(m).",
+          "texto": "El ion experimenta una aceleración cuyo módulo responde a \\( a = \\frac{e \\cdot v_0 \\cdot B}{m} \\).",
           "correcta": true
         },
         {
           "id": "b",
-          "texto": "El ion de litio se desvía hacia arriba siguiendo una trayectoria parabólica.",
-          "correcta": false
+          "texto": "El ion de litio se desvía hacia arriba siguiendo una trayectoria parabólica."
         },
         {
           "id": "c",
@@ -266,23 +252,25 @@
     },
     {
       "id": 13,
-      "enunciado": "Realice el análisis correspondiente para el caso de un electrón cuando ingresa con velocidad 'v' formando un ángulo θ = 45° con respecto a un campo magnético uniforme y suficientemente extenso, entrante al plano de la hoja:",
+      "enunciado": "Realice el análisis correspondiente para el caso de un electrón cuando ingresa con velocidad \\(v\\) formando un ángulo \\(\\theta = 45°\\) con respecto a un campo magnético uniforme y suficientemente extenso, entrante al plano de la hoja:",
       "descripcion": "Indique Verdadero (V) o Falso (F) para cada afirmación.",
       "opciones": [
         {
           "id": "a",
-          "texto": "La trayectoria que describe el electrón es circular de sentido horario (circunferencia).",
-          "correcta": false
+          "texto": "La trayectoria que describe el electrón es circular de sentido horario (circunferencia)."
         },
         {
           "id": "b",
-          "texto": "La trayectoria que describe el electrón es una hélice circular de sentido antihorario.",
-          "correcta": false
+          "texto": "La trayectoria que describe el electrón es una hélice circular de sentido antihorario."
         },
         {
           "id": "c",
-          "texto": "La trayectoria que describe el electrón es parabólica de sentido horario.",
-          "correcta": false
+          "texto": "La trayectoria que describe el electrón es parabólica de sentido horario."
+        },
+        {
+          "id": "d",
+          "texto": "Ninguna de las afirmaciones es correcta.",
+          "correcta": true
         }
       ]
     },
@@ -293,18 +281,16 @@
       "opciones": [
         {
           "id": "a",
-          "texto": "En el selector de velocidades del espectrómetro se combinan un campo E y un campo B de direcciones perpendiculares.",
+          "texto": "En el selector de velocidades del espectrómetro se combinan un campo \\(\\vec{E}\\) y un campo \\(\\vec{B}\\) de direcciones perpendiculares.",
           "correcta": true
         },
         {
           "id": "b",
-          "texto": "Todos los iones expulsados por la fuente salen con la misma energía cinética.",
-          "correcta": false
+          "texto": "Todos los iones expulsados por la fuente salen con la misma energía cinética."
         },
         {
           "id": "c",
-          "texto": "En este caso se verifica que m1 < m2.",
-          "correcta": false
+          "texto": "En este caso se verifica que \\( m_1 < m_2 \\)."
         }
       ]
     },
@@ -315,40 +301,40 @@
       "opciones": [
         {
           "id": "a",
-          "texto": "Si la espira está sumergida en un campo magnético como indica la figura, la fuerza neta sobre ella es distinta de cero.",
-          "correcta": false
+          "texto": "Si la espira está sumergida en un campo magnético como indica la figura, la fuerza neta sobre ella es distinta de cero."
         },
         {
           "id": "b",
-          "texto": "El par de torsión neto es igual a cero.",
-          "correcta": false
+          "texto": "El par de torsión neto es igual a cero."
         },
         {
           "id": "c",
-          "texto": "El momento magnético depende del valor del campo magnético.",
-          "correcta": false
+          "texto": "El momento magnético depende del valor del campo magnético."
+        },
+        {
+          "id": "d",
+          "texto": "Ninguna de las afirmaciones es correcta.",
+          "correcta": true
         }
       ]
     },
     {
       "id": 16,
-      "enunciado": "Se tiene una espira circular en el plano XY, centrada en el origen, por la cual circula una corriente I0 en sentido antihorario. Por el centro de la espira pasa una carga positiva +q, moviéndose con velocidad v = v0·î. Analice las afirmaciones:",
+      "enunciado": "Se tiene una espira circular en el plano XY, centrada en el origen, por la cual circula una corriente \\(I_0\\) en sentido antihorario. Por el centro de la espira pasa una carga positiva \\(+q\\), moviéndose con velocidad \\( \\vec{v} = v_0\\,\\hat{i} \\). Analice las afirmaciones:",
       "descripcion": "Indique Verdadero (V) o Falso (F) para cada afirmación.",
       "opciones": [
         {
           "id": "a",
-          "texto": "Sobre la carga aparece una fuerza magnética deflectora lateral con el sentido −ĵ.",
+          "texto": "Sobre la carga aparece una fuerza magnética deflectora lateral con el sentido \\(-\\hat{j}\\).",
           "correcta": true
         },
         {
           "id": "b",
-          "texto": "En el centro de la espira circular con corriente se cumple que B0 = 0.",
-          "correcta": false
+          "texto": "En el centro de la espira circular con corriente se cumple que \\( \\vec{B}_0 = \\vec{0} \\)."
         },
         {
           "id": "c",
-          "texto": "La carga experimenta un desvío de su trayectoria original, debido a una fuerza en sentido +k̂.",
-          "correcta": false
+          "texto": "La carga experimenta un desvío de su trayectoria original, debido a una fuerza en sentido \\(+\\hat{k}\\)."
         }
       ]
     },
@@ -359,18 +345,20 @@
       "opciones": [
         {
           "id": "a",
-          "texto": "Son tangentes a la fuerza que sufre una carga en algún punto.",
-          "correcta": false
+          "texto": "Son tangentes a la fuerza que sufre una carga en algún punto."
         },
         {
           "id": "b",
-          "texto": "Salen del polo negativo y entran por el positivo.",
-          "correcta": false
+          "texto": "Salen del polo negativo y entran por el positivo."
         },
         {
           "id": "c",
-          "texto": "Son perpendiculares al campo B en cualquier punto.",
-          "correcta": false
+          "texto": "Son perpendiculares al campo \\(\\vec{B}\\) en cualquier punto."
+        },
+        {
+          "id": "d",
+          "texto": "Ninguna de las afirmaciones es correcta.",
+          "correcta": true
         }
       ]
     },
@@ -381,8 +369,7 @@
       "opciones": [
         {
           "id": "a",
-          "texto": "Son tangentes a la fuerza que sufre una carga en algún punto.",
-          "correcta": false
+          "texto": "Son tangentes a la fuerza que sufre una carga en algún punto."
         },
         {
           "id": "b",
@@ -391,52 +378,51 @@
         },
         {
           "id": "c",
-          "texto": "Son perpendiculares al campo B en cualquier punto de las mismas.",
-          "correcta": false
+          "texto": "Son perpendiculares al campo \\(\\vec{B}\\) en cualquier punto de las mismas."
         }
       ]
     },
     {
       "id": 19,
-      "enunciado": "Un hilo conductor recto por el que circula una corriente de intensidad I (segunda variante). Analice las siguientes afirmaciones:",
+      "enunciado": "Un hilo conductor recto por el que circula una corriente de intensidad \\(I\\) (segunda variante). Analice las siguientes afirmaciones:",
       "descripcion": "Indique Verdadero (V) o Falso (F) para cada afirmación.",
       "opciones": [
         {
           "id": "a",
-          "texto": "Genera un campo magnético B en la dirección del hilo.",
-          "correcta": false
+          "texto": "Genera un campo magnético \\(\\vec{B}\\) en la dirección del hilo."
         },
         {
           "id": "b",
-          "texto": "No sufre ninguna fuerza magnética en presencia de un campo B paralelo al hilo.",
+          "texto": "No sufre ninguna fuerza magnética en presencia de un campo \\(\\vec{B}\\) paralelo al hilo.",
           "correcta": true
         },
         {
           "id": "c",
-          "texto": "Genera un campo B que no depende de la intensidad de la corriente.",
-          "correcta": false
+          "texto": "Genera un campo \\(\\vec{B}\\) que no depende de la intensidad de la corriente."
         }
       ]
     },
     {
       "id": 20,
-      "enunciado": "Un campo magnético en un punto P se puede determinar mediante una carga de prueba animada con una velocidad V (segunda variante). Analice las siguientes afirmaciones:",
+      "enunciado": "Un campo magnético en un punto P se puede determinar mediante una carga de prueba animada con una velocidad \\(\\vec{v}\\) (segunda variante). Analice las siguientes afirmaciones:",
       "descripcion": "Indique Verdadero (V) o Falso (F) para cada afirmación.",
       "opciones": [
         {
           "id": "a",
-          "texto": "El desplazamiento de la carga debe coincidir con una línea de campo.",
-          "correcta": false
+          "texto": "El desplazamiento de la carga debe coincidir con una línea de campo."
         },
         {
           "id": "b",
-          "texto": "Si la carga está en reposo el campo magnético desaparece.",
-          "correcta": false
+          "texto": "Si la carga está en reposo el campo magnético desaparece."
         },
         {
           "id": "c",
-          "texto": "La fuerza resultante es proporcional al producto escalar del vector velocidad de la carga y el vector campo magnético.",
-          "correcta": false
+          "texto": "La fuerza resultante es proporcional al producto escalar del vector velocidad de la carga y el vector campo magnético: \\( F \\propto \\vec{v} \\cdot \\vec{B} \\)."
+        },
+        {
+          "id": "d",
+          "texto": "Ninguna de las afirmaciones es correcta.",
+          "correcta": true
         }
       ]
     },
@@ -447,13 +433,11 @@
       "opciones": [
         {
           "id": "a",
-          "texto": "La intensidad de la corriente que pasa en M es el doble que la corriente que pasa por N.",
-          "correcta": false
+          "texto": "La intensidad de la corriente que pasa en M es el doble que la corriente que pasa por N."
         },
         {
           "id": "b",
-          "texto": "La potencia producida en M es igual a la potencia producida en N.",
-          "correcta": false
+          "texto": "La potencia producida en M es igual a la potencia producida en N."
         },
         {
           "id": "c",
@@ -464,44 +448,44 @@
     },
     {
       "id": 22,
-      "enunciado": "Un hilo conductor recto por el que circula una corriente de intensidad I (tercera variante). Analice las siguientes afirmaciones:",
+      "enunciado": "Un hilo conductor recto por el que circula una corriente de intensidad \\(I\\) (tercera variante). Analice las siguientes afirmaciones:",
       "descripcion": "Indique Verdadero (V) o Falso (F) para cada afirmación.",
       "opciones": [
         {
           "id": "a",
-          "texto": "Genera un campo magnético B en la dirección del hilo.",
-          "correcta": false
+          "texto": "Genera un campo magnético \\(\\vec{B}\\) en la dirección del hilo."
         },
         {
           "id": "b",
-          "texto": "Sufre una fuerza magnética en presencia de un campo B paralelo al hilo.",
-          "correcta": false
+          "texto": "Sufre una fuerza magnética en presencia de un campo \\(\\vec{B}\\) paralelo al hilo."
         },
         {
           "id": "c",
-          "texto": "Genera un campo B el cual es proporcional al cuadrado de dicha corriente.",
-          "correcta": false
+          "texto": "Genera un campo \\(\\vec{B}\\) el cual es proporcional al cuadrado de dicha corriente."
+        },
+        {
+          "id": "d",
+          "texto": "Ninguna de las afirmaciones es correcta.",
+          "correcta": true
         }
       ]
     },
     {
       "id": 23,
-      "enunciado": "Una espira rectangular que transporta una intensidad de corriente I constante, inmersa en un campo magnético uniforme (segunda variante). Analice las siguientes afirmaciones:",
+      "enunciado": "Una espira rectangular que transporta una intensidad de corriente \\(I\\) constante, inmersa en un campo magnético uniforme (segunda variante). Analice las siguientes afirmaciones:",
       "descripcion": "Indique Verdadero (V) o Falso (F) para cada afirmación.",
       "opciones": [
         {
           "id": "a",
-          "texto": "Experimenta una fuerza resultante Fm = I·B·L en la cual L es la longitud total del conductor que integra la espira.",
-          "correcta": false
+          "texto": "Experimenta una fuerza resultante \\( F_m = I \\cdot B \\cdot L \\) en la cual \\(L\\) es la longitud total del conductor que integra la espira."
         },
         {
           "id": "b",
-          "texto": "Se encuentra en equilibrio cuando la espira está ubicada en forma perpendicular a las líneas magnéticas de dicho campo.",
-          "correcta": false
+          "texto": "Se encuentra en equilibrio cuando la espira está ubicada en forma perpendicular a las líneas magnéticas de dicho campo."
         },
         {
           "id": "c",
-          "texto": "Tiene asociado un momento magnético cuya expresión es pm = I·A·û, tal que A es el área limitada por la espira y û es un versor normal al plano de la espira.",
+          "texto": "Tiene asociado un momento magnético cuya expresión es \\( \\vec{p}_m = I \\cdot A \\cdot \\hat{n} \\), tal que \\(A\\) es el área limitada por la espira y \\(\\hat{n}\\) es un versor normal al plano de la espira.",
           "correcta": true
         }
       ]
@@ -513,8 +497,7 @@
       "opciones": [
         {
           "id": "a",
-          "texto": "Los portadores de carga en un metal son partículas positivas.",
-          "correcta": false
+          "texto": "Los portadores de carga en un metal son partículas positivas."
         },
         {
           "id": "b",
@@ -523,42 +506,38 @@
         },
         {
           "id": "c",
-          "texto": "El campo eléctrico establecido en la placa metálica no depende del campo magnético al que se ve sometido.",
-          "correcta": false
+          "texto": "El campo eléctrico establecido en la placa metálica no depende del campo magnético al que se ve sometido."
         }
       ]
     },
     {
       "id": 25,
-      "enunciado": "Se tiene una espira circular en el plano XY, centrada en el origen, por la cual circula una corriente I0 en sentido antihorario. Por el centro de la espira pasa una carga positiva +q, moviéndose con velocidad v = v0·î (segunda variante). Analice las afirmaciones:",
+      "enunciado": "Se tiene una espira circular en el plano XY, centrada en el origen, por la cual circula una corriente \\(I_0\\) en sentido antihorario. Por el centro de la espira pasa una carga positiva \\(+q\\), moviéndose con velocidad \\( \\vec{v} = v_0\\,\\hat{i} \\) (segunda variante). Analice las afirmaciones:",
       "descripcion": "Indique Verdadero (V) o Falso (F) para cada afirmación.",
       "opciones": [
         {
           "id": "a",
-          "texto": "Sobre la carga aparece una fuerza magnética deflectora lateral con el sentido −ĵ.",
+          "texto": "Sobre la carga aparece una fuerza magnética deflectora lateral con el sentido \\(-\\hat{j}\\).",
           "correcta": true
         },
         {
           "id": "b",
-          "texto": "En el centro de la espira circular con corriente se cumple que B0 = 0.",
-          "correcta": false
+          "texto": "En el centro de la espira circular con corriente se cumple que \\( \\vec{B}_0 = \\vec{0} \\)."
         },
         {
           "id": "c",
-          "texto": "La carga experimenta un desvío de su trayectoria original, debido a una fuerza en sentido +k̂.",
-          "correcta": false
+          "texto": "La carga experimenta un desvío de su trayectoria original, debido a una fuerza en sentido \\(+\\hat{k}\\)."
         }
       ]
     },
     {
       "id": 26,
-      "enunciado": "Una esfera 'A' con carga eléctrica 'q' positiva y de masa mA está suspendida mediante un hilo aislante. Otra esfera 'B' de masa mB y con una carga igual en valor pero de signo opuesto a la de 'A', se coloca a una distancia d de esta. Bajo estas condiciones, 'B' se encuentra en reposo al soltarla. Analice las afirmaciones:",
+      "enunciado": "Una esfera 'A' con carga eléctrica \\(q\\) positiva y de masa \\(m_A\\) está suspendida mediante un hilo aislante. Otra esfera 'B' de masa \\(m_B\\) y con una carga igual en valor pero de signo opuesto a la de 'A', se coloca a una distancia \\(d\\) de esta. Bajo estas condiciones, 'B' se encuentra en reposo al soltarla. Analice las afirmaciones:",
       "descripcion": "Indique Verdadero (V) o Falso (F) para cada afirmación.",
       "opciones": [
         {
           "id": "a",
-          "texto": "Sobre la esfera A actúan solo dos fuerzas: la eléctrica y la gravitatoria.",
-          "correcta": false
+          "texto": "Sobre la esfera A actúan solo dos fuerzas: la eléctrica y la gravitatoria."
         },
         {
           "id": "b",
@@ -584,19 +563,18 @@
         },
         {
           "id": "b",
-          "texto": "El campo debido a un conductor recto de longitud L responde a B = Fm/(L·I).",
-          "correcta": false
+          "texto": "El campo debido a un conductor recto de longitud \\(L\\) responde a \\( B = \\frac{F_m}{L \\cdot I} \\)."
         },
         {
           "id": "c",
-          "texto": "El aporte que realiza un tramo infinitamente corto del conductor de longitud dr responde a la expresión dB = (µ0/4π)(Idr × û_r)/r².",
+          "texto": "El aporte que realiza un tramo infinitamente corto del conductor de longitud \\(d\\vec{r}\\) responde a la expresión \\( d\\vec{B} = \\frac{\\mu_0}{4\\pi} \\frac{I\\, d\\vec{r} \\times \\hat{u}_r}{r^2} \\).",
           "correcta": true
         }
       ]
     },
     {
       "id": 28,
-      "enunciado": "Se dispone de dos elementos conductores rectos, paralelos y de longitud 'infinita', separados entre sí por una distancia 'd' por los cuales circulan corrientes de igual sentido I1 e I2. Analice las afirmaciones:",
+      "enunciado": "Se dispone de dos elementos conductores rectos, paralelos y de longitud 'infinita', separados entre sí por una distancia \\(d\\), por los cuales circulan corrientes de igual sentido \\(I_1\\) e \\(I_2\\). Analice las afirmaciones:",
       "descripcion": "Indique Verdadero (V) o Falso (F) para cada afirmación.",
       "opciones": [
         {
@@ -611,42 +589,39 @@
         },
         {
           "id": "c",
-          "texto": "Si se cumpliera que I1 = I2, en un punto medio (equidistante de ambos conductores) el campo magnético resultante sería doble del generado por cada conductor.",
-          "correcta": false
+          "texto": "Si se cumpliera que \\(I_1 = I_2\\), en un punto medio (equidistante de ambos conductores) el campo magnético resultante sería doble del generado por cada conductor."
         }
       ]
     },
     {
       "id": 29,
-      "enunciado": "Se lanza una carga 'q' positiva entre las armaduras de un capacitor plano cargado, inmerso en un campo magnético B uniforme como se indica en la figura. Analice las afirmaciones:",
+      "enunciado": "Se lanza una carga \\(q\\) positiva entre las armaduras de un capacitor plano cargado, inmerso en un campo magnético \\(\\vec{B}\\) uniforme como se indica en la figura. Analice las afirmaciones:",
       "descripcion": "Indique Verdadero (V) o Falso (F) para cada afirmación.",
       "opciones": [
         {
           "id": "a",
-          "texto": "La carga 'q' se desvía hacia la placa positiva si ‖v‖·‖B‖ > ‖E‖.",
+          "texto": "La carga \\(q\\) se desvía hacia la placa positiva si \\( \\|\\vec{v}\\| \\cdot \\|\\vec{B}\\| > \\|\\vec{E}\\| \\).",
           "correcta": true
         },
         {
           "id": "b",
-          "texto": "La carga 'q' no sufriría desviación si fuera ‖E‖ = 0.",
-          "correcta": false
+          "texto": "La carga \\(q\\) no sufriría desviación si fuera \\( \\|\\vec{E}\\| = 0 \\)."
         },
         {
           "id": "c",
-          "texto": "La carga 'q' sigue una trayectoria recta si ‖v‖·‖B‖ = ‖E‖.",
+          "texto": "La carga \\(q\\) sigue una trayectoria recta si \\( \\|\\vec{v}\\| \\cdot \\|\\vec{B}\\| = \\|\\vec{E}\\| \\).",
           "correcta": true
         }
       ]
     },
     {
       "id": 30,
-      "enunciado": "Para el caso de dos conductores por el que circulan corrientes I1 e I2 respectivamente, se puede decir que:",
+      "enunciado": "Para el caso de dos conductores por el que circulan corrientes \\(I_1\\) e \\(I_2\\) respectivamente, se puede decir que:",
       "descripcion": "Indique Verdadero (V) o Falso (F) para cada afirmación.",
       "opciones": [
         {
           "id": "a",
-          "texto": "La fuerza de origen magnético sobre el conductor 2 no es nula e igual a la del conductor 1.",
-          "correcta": false
+          "texto": "La fuerza de origen magnético sobre el conductor 2 no es nula e igual a la del conductor 1."
         },
         {
           "id": "b",
@@ -655,8 +630,7 @@
         },
         {
           "id": "c",
-          "texto": "La fuerza de origen magnético entre ambos conductores es igual en ambos y directamente proporcional a 'd'.",
-          "correcta": false
+          "texto": "La fuerza de origen magnético entre ambos conductores es igual en ambos y directamente proporcional a \\(d\\)."
         }
       ]
     },
@@ -667,13 +641,11 @@
       "opciones": [
         {
           "id": "a",
-          "texto": "En tal plano, un electrón se mueve siguiendo la trayectoria 1.",
-          "correcta": false
+          "texto": "En tal plano, un electrón se mueve siguiendo la trayectoria 1."
         },
         {
           "id": "b",
-          "texto": "El electrón sigue la trayectoria 2 si existe un campo eléctrico que no anule la fuerza de Lorentz.",
-          "correcta": false
+          "texto": "El electrón sigue la trayectoria 2 si existe un campo eléctrico que no anule la fuerza de Lorentz."
         },
         {
           "id": "c",
@@ -684,17 +656,16 @@
     },
     {
       "id": 32,
-      "enunciado": "Dos conductores paralelos e ilimitados transportan corrientes de intensidades I1 e I2, en el vacío y separados por una distancia r. Para este sistema se cumple que:",
+      "enunciado": "Dos conductores paralelos e ilimitados transportan corrientes de intensidades \\(I_1\\) e \\(I_2\\), en el vacío y separados por una distancia \\(r\\). Para este sistema se cumple que:",
       "descripcion": "Indique Verdadero (V) o Falso (F) para cada afirmación.",
       "opciones": [
         {
           "id": "a",
-          "texto": "Los campos magnéticos que cada uno de los conductores genera en la posición del conductor vecino son paralelos y del mismo sentido.",
-          "correcta": false
+          "texto": "Los campos magnéticos que cada uno de los conductores genera en la posición del conductor vecino son paralelos y del mismo sentido."
         },
         {
           "id": "b",
-          "texto": "Los conductores se ejercen fuerzas mutuas de atracción tal que la densidad lineal de fuerzas responde a fm = (µ0/2π)·(I1·I2/r).",
+          "texto": "Los conductores se ejercen fuerzas mutuas de atracción tal que la densidad lineal de fuerzas responde a \\( f_m = \\frac{\\mu_0}{2\\pi} \\frac{I_1 I_2}{r} \\).",
           "correcta": true
         },
         {
@@ -706,45 +677,46 @@
     },
     {
       "id": 33,
-      "enunciado": "INDUCCIÓN ELECTROMAGNÉTICA. Desde el punto de vista de la teoría de circuitos, el parámetro que caracteriza la inducción de una bobina es la autoinducción L. Analice las siguientes afirmaciones:",
+      "enunciado": "INDUCCIÓN ELECTROMAGNÉTICA. Desde el punto de vista de la teoría de circuitos, el parámetro que caracteriza la inducción de una bobina es la autoinducción \\(L\\). Analice las siguientes afirmaciones:",
       "descripcion": "Indique Verdadero (V) o Falso (F) para cada afirmación.",
       "opciones": [
         {
           "id": "a",
-          "texto": "El efecto de la bobina es el de inducir una fuerza electromotriz que se opone al paso de la corriente a través de ella, esta se puede ver como una caída de tensión que viene dada por ΔV = L·(di/dt).",
+          "texto": "El efecto de la bobina es el de inducir una f.e.m. que se opone al paso de la corriente, vista como una caída de tensión dada por \\( \\Delta V = L \\frac{di}{dt} \\).",
           "correcta": true
         },
         {
           "id": "b",
-          "texto": "La constante de tiempo en un circuito RL es τ = L/R.",
+          "texto": "La constante de tiempo en un circuito RL es \\( \\tau = \\frac{L}{R} \\).",
           "correcta": true
         },
         {
           "id": "c",
-          "texto": "Atendiendo a la ley de las mallas de Kirchhoff, la ecuación del circuito es: R·I − L·(dI/dt) = V0.",
-          "correcta": false
+          "texto": "Atendiendo a la ley de las mallas de Kirchhoff, la ecuación del circuito es: \\( R I - L \\frac{dI}{dt} = V_0 \\)."
         }
       ]
     },
     {
       "id": 34,
-      "enunciado": "Analice las siguientes afirmaciones relativas al campo magnético producido por un conductor recto de longitud 2a por el que circula una corriente I:",
+      "enunciado": "Analice las siguientes afirmaciones relativas al campo magnético producido por un conductor recto de longitud \\(2a\\) por el que circula una corriente \\(I\\):",
       "descripcion": "Indique Verdadero (V) o Falso (F) para cada afirmación.",
       "opciones": [
         {
           "id": "a",
-          "texto": "El campo magnético sobre el eje del conductor es máximo y entrante al plano del papel.",
-          "correcta": false
+          "texto": "El campo magnético sobre el eje del conductor es máximo y entrante al plano del papel."
         },
         {
           "id": "b",
-          "texto": "El módulo del campo magnético en P es: B = (µ0·I)/(2π)·1/√(x²+a²).",
-          "correcta": false
+          "texto": "El módulo del campo magnético en P es: \\( B = \\frac{\\mu_0 I}{2\\pi} \\frac{1}{\\sqrt{x^2 + a^2}} \\)."
         },
         {
           "id": "c",
-          "texto": "Para la deducción del campo magnético en P se utiliza la Ley de Ampere.",
-          "correcta": false
+          "texto": "Para la deducción del campo magnético en P se utiliza la Ley de Ampère."
+        },
+        {
+          "id": "d",
+          "texto": "Ninguna de las afirmaciones es correcta.",
+          "correcta": true
         }
       ]
     },
@@ -765,102 +737,93 @@
         },
         {
           "id": "c",
-          "texto": "Las líneas del campo inducido son siempre líneas abiertas.",
-          "correcta": false
+          "texto": "Las líneas del campo inducido son siempre líneas abiertas."
         }
       ]
     },
     {
       "id": 36,
-      "enunciado": "En un circuito RL serie de corriente continua, de constante de tiempo τ, alimentado por una batería de f.e.m. constante ε. Analice las siguientes afirmaciones:",
+      "enunciado": "En un circuito RL serie de corriente continua, de constante de tiempo \\(\\tau\\), alimentado por una batería de f.e.m. constante \\(\\varepsilon\\). Analice las siguientes afirmaciones:",
       "descripcion": "Indique Verdadero (V) o Falso (F) para cada afirmación.",
       "opciones": [
         {
           "id": "a",
-          "texto": "La intensidad de corriente varía con el tiempo según I(t) = I0·e^(-t/τ).",
-          "correcta": false
+          "texto": "La intensidad de corriente varía con el tiempo según \\( I(t) = I_0 \\, e^{-t/\\tau} \\)."
         },
         {
           "id": "b",
-          "texto": "La diferencia de potencial en la resistencia R aumenta según ΔVR(t) = ε·(1 − e^(-t/τ)).",
+          "texto": "La diferencia de potencial en la resistencia R aumenta según \\( \\Delta V_R(t) = \\varepsilon \\left(1 - e^{-t/\\tau}\\right) \\).",
           "correcta": true
         },
         {
           "id": "c",
-          "texto": "En el inductor L se induce una f.e.m. cuya expresión está determinada por la ley integral de Ampere.",
-          "correcta": false
+          "texto": "En el inductor L se induce una f.e.m. cuya expresión está determinada por la ley integral de Ampère."
         }
       ]
     },
     {
       "id": 37,
-      "enunciado": "En un disco conductor de radio R con velocidad angular ω, sumergido en un campo magnético B, la f.e.m. es:",
+      "enunciado": "En un disco conductor de radio \\(R\\) con velocidad angular \\(\\omega\\), sumergido en un campo magnético \\(B\\), la f.e.m. es:",
       "descripcion": "Indique Verdadero (V) o Falso (F) para cada afirmación.",
       "opciones": [
         {
           "id": "a",
-          "texto": "ε = (1/2)·v·B·R²",
-          "correcta": false
+          "texto": "\\( \\varepsilon = \\frac{1}{2} v B R^2 \\)"
         },
         {
           "id": "b",
-          "texto": "ε = (1/2)·ω·B·R²",
+          "texto": "\\( \\varepsilon = \\frac{1}{2} \\omega B R^2 \\)",
           "correcta": true
         },
         {
           "id": "c",
-          "texto": "ε = ω·B·R²",
-          "correcta": false
+          "texto": "\\( \\varepsilon = \\omega B R^2 \\)"
         }
       ]
     },
     {
       "id": 38,
-      "enunciado": "En un circuito RL serie de corriente continua, de constante de tiempo τ, alimentado por una batería de f.e.m. constante ε, por el cual circula una corriente de intensidad instantánea I(t). Analice las afirmaciones:",
+      "enunciado": "En un circuito RL serie de corriente continua, de constante de tiempo \\(\\tau\\), alimentado por una batería de f.e.m. constante \\(\\varepsilon\\), por el cual circula una corriente de intensidad instantánea \\(I(t)\\). Analice las afirmaciones:",
       "descripcion": "Indique Verdadero (V) o Falso (F) para cada afirmación.",
       "opciones": [
         {
           "id": "a",
-          "texto": "En la bobina L se induce una f.e.m. que responde a: εL = −L·dI(t)/dt.",
+          "texto": "En la bobina L se induce una f.e.m. que responde a: \\( \\varepsilon_L = -L \\frac{dI(t)}{dt} \\).",
           "correcta": true
         },
         {
           "id": "b",
-          "texto": "La diferencia de potencial en la resistencia R aumenta según: ΔVR(t) = ε·e^(-t/τ).",
-          "correcta": false
+          "texto": "La diferencia de potencial en la resistencia R aumenta según: \\( \\Delta V_R(t) = \\varepsilon \\, e^{-t/\\tau} \\)."
         },
         {
           "id": "c",
-          "texto": "La f.e.m. inducida en la bobina L está determinada por la ley integral de Gauss para campos magnéticos.",
-          "correcta": false
+          "texto": "La f.e.m. inducida en la bobina L está determinada por la ley integral de Gauss para campos magnéticos."
         }
       ]
     },
     {
       "id": 39,
-      "enunciado": "Un solenoide de largo L con área de sección transversal A y N1 espiras está circundado por una bobina con N2 espiras. Si ahora se construye el solenoide con el doble de espiras y fuera dos veces más largo, ¿cuánto más grande resultaría la inductancia mutua?",
+      "enunciado": "Un solenoide de largo \\(L\\) con área de sección transversal \\(A\\) y \\(N_1\\) espiras está circundado por una bobina con \\(N_2\\) espiras. Si ahora se construye el solenoide con el doble de espiras y fuera dos veces más largo, ¿cuánto más grande resultaría la inductancia mutua?",
       "descripcion": "Indique Verdadero (V) o Falso (F) para cada afirmación.",
       "opciones": [
         {
           "id": "a",
-          "texto": "M sería cuatro veces más grande.",
-          "correcta": false
+          "texto": "\\(M\\) sería cuatro veces más grande."
         },
         {
           "id": "b",
-          "texto": "M sería el doble de grande.",
-          "correcta": false
+          "texto": "\\(M\\) sería el doble de grande."
         },
         {
           "id": "c",
-          "texto": "M permanecería sin cambio.",
+          "texto": "\\(M\\) permanecería sin cambio.",
           "correcta": true
         }
       ]
     },
     {
       "id": 40,
-      "enunciado": "Dos barras metálicas de longitud L se sueltan desde el reposo en el mismo instante en una zona donde existe un campo magnético B uniforme, perpendicular y saliente del plano de la hoja. Una se suelta horizontal y la otra vertical. Al cabo de un tiempo t de soltarlas (primera variante):",
+      "enunciado": "Dos barras metálicas de longitud \\(L\\) se sueltan desde el reposo en el mismo instante en una zona donde existe un campo magnético \\(\\vec{B}\\) uniforme, perpendicular y saliente del plano de la hoja. Una se suelta horizontal y la otra vertical. Al cabo de un tiempo \\(t\\) de soltarlas (primera variante):",
       "descripcion": "Indique Verdadero (V) o Falso (F) para cada afirmación.",
       "opciones": [
         {
@@ -875,20 +838,18 @@
         },
         {
           "id": "c",
-          "texto": "En la barra horizontal se genera una corriente I.",
-          "correcta": false
+          "texto": "En la barra horizontal se genera una corriente \\(I\\)."
         }
       ]
     },
     {
       "id": 41,
-      "enunciado": "Dos barras metálicas de longitud L se sueltan desde el reposo en el mismo instante en una zona donde existe un campo magnético B uniforme, perpendicular y saliente del plano de la hoja. Una se suelta horizontal y la otra vertical. Al cabo de un tiempo t de soltarlas (segunda variante):",
+      "enunciado": "Dos barras metálicas de longitud \\(L\\) se sueltan desde el reposo en el mismo instante en una zona donde existe un campo magnético \\(\\vec{B}\\) uniforme, perpendicular y saliente del plano de la hoja. Una se suelta horizontal y la otra vertical. Al cabo de un tiempo \\(t\\) de soltarlas (segunda variante):",
       "descripcion": "Indique Verdadero (V) o Falso (F) para cada afirmación.",
       "opciones": [
         {
           "id": "a",
-          "texto": "La barra horizontal no experimentará una f.e.m. inducida.",
-          "correcta": false
+          "texto": "La barra horizontal no experimentará una f.e.m. inducida."
         },
         {
           "id": "b",
@@ -897,14 +858,13 @@
         },
         {
           "id": "c",
-          "texto": "En la barra vertical se genera una corriente I.",
-          "correcta": false
+          "texto": "En la barra vertical se genera una corriente \\(I\\)."
         }
       ]
     },
     {
       "id": 42,
-      "enunciado": "Dos barras metálicas de longitud L se sueltan desde el reposo en el mismo instante en una zona donde existe un campo magnético B uniforme, perpendicular y saliente del plano de la hoja. Una se suelta horizontal y la otra vertical. Al cabo de un tiempo t de soltarlas (tercera variante):",
+      "enunciado": "Dos barras metálicas de longitud \\(L\\) se sueltan desde el reposo en el mismo instante en una zona donde existe un campo magnético \\(\\vec{B}\\) uniforme, perpendicular y saliente del plano de la hoja. Una se suelta horizontal y la otra vertical. Al cabo de un tiempo \\(t\\) de soltarlas (tercera variante):",
       "descripcion": "Indique Verdadero (V) o Falso (F) para cada afirmación.",
       "opciones": [
         {
@@ -914,25 +874,22 @@
         },
         {
           "id": "b",
-          "texto": "La barra vertical experimentará una f.e.m. inducida.",
-          "correcta": false
+          "texto": "La barra vertical experimentará una f.e.m. inducida."
         },
         {
           "id": "c",
-          "texto": "En la barra horizontal se genera una corriente I.",
-          "correcta": false
+          "texto": "En la barra horizontal se genera una corriente \\(I\\)."
         }
       ]
     },
     {
       "id": 43,
-      "enunciado": "Suponga un solenoide toroidal de área de sección transversal A y radio medio r con N espiras. Si ahora se construye el solenoide con el doble de espiras y el doble de radio medio, el nuevo valor de inductancia es:",
+      "enunciado": "Suponga un solenoide toroidal de área de sección transversal \\(A\\) y radio medio \\(r\\) con \\(N\\) espiras. Si ahora se construye el solenoide con el doble de espiras y el doble de radio medio, el nuevo valor de inductancia es:",
       "descripcion": "Indique Verdadero (V) o Falso (F) para cada afirmación.",
       "opciones": [
         {
           "id": "a",
-          "texto": "Igual al anterior.",
-          "correcta": false
+          "texto": "Igual al anterior."
         },
         {
           "id": "b",
@@ -941,42 +898,40 @@
         },
         {
           "id": "c",
-          "texto": "Cuatro veces el anterior.",
-          "correcta": false
+          "texto": "Cuatro veces el anterior."
         }
       ]
     },
     {
       "id": 44,
-      "enunciado": "La figura muestra un circuito eléctrico con un resistor 'R' y un inductor 'L', conectados en serie a una fuente de tensión 'ε'. En t = 0s se cierra la llave interruptora. Analice las afirmaciones:",
+      "enunciado": "La figura muestra un circuito eléctrico con un resistor \\(R\\) y un inductor \\(L\\), conectados en serie a una fuente de tensión \\(V_0\\). En \\(t = 0\\) s se cierra la llave interruptora. Analice las afirmaciones:",
       "descripcion": "Indique Verdadero (V) o Falso (F) para cada afirmación.",
       "opciones": [
         {
           "id": "a",
-          "texto": "Se cumple: I(t) = (V0/R)·[1 − e^(−(R/L)·t)].",
+          "texto": "Se cumple: \\( I(t) = \\frac{V_0}{R} \\left[1 - e^{-\\frac{R}{L}t}\\right] \\).",
           "correcta": true
         },
         {
           "id": "b",
-          "texto": "Se cumple en 'R': Vres(t) = V0·[1 − e^(−(R/L)·t)].",
+          "texto": "Se cumple en 'R': \\( V_{res}(t) = V_0 \\left[1 - e^{-\\frac{R}{L}t}\\right] \\).",
           "correcta": true
         },
         {
           "id": "c",
-          "texto": "Se cumple en 'L': Vind(t) = V0·e^(−(R/L)·t).",
+          "texto": "Se cumple en 'L': \\( V_{ind}(t) = V_0 \\, e^{-\\frac{R}{L}t} \\).",
           "correcta": true
         }
       ]
     },
     {
       "id": 45,
-      "enunciado": "Un disco conductor de radio r gira con velocidad angular constante ω inmerso en un campo magnético constante y uniforme B perpendicular al disco. Dos escobillas rasantes permiten conectar al disco con una resistencia fija R. Analice las afirmaciones:",
+      "enunciado": "Un disco conductor de radio \\(r\\) gira con velocidad angular constante \\(\\omega\\) inmerso en un campo magnético constante y uniforme \\(B\\) perpendicular al disco. Dos escobillas rasantes permiten conectar al disco con una resistencia fija \\(R\\). Para este sistema se cumple que:",
       "descripcion": "Indique Verdadero (V) o Falso (F) para cada afirmación.",
       "opciones": [
         {
           "id": "a",
-          "texto": "Se induce una f.e.m. en el disco que responde a: εd = −L·dI(t)/dt.",
-          "correcta": false
+          "texto": "Se induce una f.e.m. en el disco que responde a: \\( \\varepsilon_d = -L \\frac{dI(t)}{dt} \\)."
         },
         {
           "id": "b",
@@ -985,8 +940,7 @@
         },
         {
           "id": "c",
-          "texto": "A través de la resistencia R circula una corriente inducida alterna que responde a: I(t) = (εd/R)·sin(ω·t).",
-          "correcta": false
+          "texto": "A través de la resistencia \\(R\\) circula una corriente inducida alterna que responde a: \\( I(t) = \\frac{\\varepsilon_d}{R} \\sin(\\omega t) \\)."
         }
       ]
     },
@@ -997,24 +951,22 @@
       "opciones": [
         {
           "id": "a",
-          "texto": "La reactancia inductiva crece con el aumento de la frecuencia.",
+          "texto": "La reactancia inductiva \\( X_L = \\omega L \\) crece con el aumento de la frecuencia.",
           "correcta": true
         },
         {
           "id": "b",
-          "texto": "La corriente está adelantada con respecto a la tensión.",
-          "correcta": false
+          "texto": "La corriente está adelantada con respecto a la tensión."
         },
         {
           "id": "c",
-          "texto": "La potencia reactiva del circuito es cero.",
-          "correcta": false
+          "texto": "La potencia reactiva del circuito es cero."
         }
       ]
     },
     {
       "id": 47,
-      "enunciado": "Una espira de alambre se coloca en un campo magnético de dirección perpendicular al plano que contiene a la espira. De pronto, la intensidad del campo magnético B comienza a aumentar (primera variante). Analice las afirmaciones:",
+      "enunciado": "Una espira de alambre se coloca en un campo magnético de dirección perpendicular al plano que contiene a la espira. De pronto, la intensidad del campo magnético \\(\\vec{B}\\) comienza a aumentar (primera variante). Analice las afirmaciones:",
       "descripcion": "Indique Verdadero (V) o Falso (F) para cada afirmación.",
       "opciones": [
         {
@@ -1024,34 +976,32 @@
         },
         {
           "id": "b",
-          "texto": "El flujo magnético a través del área encerrada por la espira permanece constante.",
-          "correcta": false
+          "texto": "El flujo magnético \\( \\Phi_B \\) a través del área encerrada por la espira permanece constante."
         },
         {
           "id": "c",
-          "texto": "En la espira se induce una f.e.m. que tiende a oponerse a la causa que le está dando origen.",
+          "texto": "En la espira se induce una f.e.m. que tiende a oponerse a la causa que le está dando origen (Ley de Lenz).",
           "correcta": true
         }
       ]
     },
     {
       "id": 48,
-      "enunciado": "Una espira de alambre conductor se coloca en un campo magnético de dirección perpendicular al plano que contiene a la espira. De pronto, la intensidad del campo magnético B comienza a aumentar (segunda variante). Analice las afirmaciones:",
+      "enunciado": "Una espira de alambre conductor se coloca en un campo magnético de dirección perpendicular al plano que contiene a la espira. De pronto, la intensidad del campo magnético \\(\\vec{B}\\) comienza a aumentar (segunda variante). Analice las afirmaciones:",
       "descripcion": "Indique Verdadero (V) o Falso (F) para cada afirmación.",
       "opciones": [
         {
           "id": "a",
-          "texto": "En la espira se induce una corriente con sentido horario.",
-          "correcta": false
+          "texto": "En la espira se induce una corriente con sentido horario."
         },
         {
           "id": "b",
-          "texto": "El flujo magnético a través del área encerrada por la espira aumenta.",
+          "texto": "El flujo magnético \\( \\Phi_B \\) a través del área encerrada por la espira aumenta.",
           "correcta": true
         },
         {
           "id": "c",
-          "texto": "En la espira se induce una f.e.m. que tiende a oponerse a la causa que le está dando origen.",
+          "texto": "En la espira se induce una f.e.m. que tiende a oponerse a la causa que le está dando origen (Ley de Lenz).",
           "correcta": true
         }
       ]
@@ -1063,24 +1013,24 @@
       "opciones": [
         {
           "id": "a",
-          "texto": "1 H = 1 Wb/A.",
+          "texto": "\\( 1\\,\\text{H} = 1\\,\\frac{\\text{Wb}}{\\text{A}} \\).",
           "correcta": true
         },
         {
           "id": "b",
-          "texto": "1 H = 1 V·s/A.",
+          "texto": "\\( 1\\,\\text{H} = 1\\,\\frac{\\text{V}\\cdot\\text{s}}{\\text{A}} \\).",
           "correcta": true
         },
         {
           "id": "c",
-          "texto": "1 H = 1 J/A².",
+          "texto": "\\( 1\\,\\text{H} = 1\\,\\frac{\\text{J}}{\\text{A}^2} \\).",
           "correcta": true
         }
       ]
     },
     {
       "id": 50,
-      "enunciado": "Una bobina circular plana de N espiras está rotando con velocidad angular ω constante alrededor de un eje diametral en el interior de un campo magnético uniforme de módulo B, partiendo de un instante inicial en el cual el plano de cada espira es perpendicular a las líneas del campo magnético. Analice las afirmaciones:",
+      "enunciado": "Una bobina circular plana de \\(N\\) espiras está rotando con velocidad angular \\(\\omega\\) constante alrededor de un eje diametral en el interior de un campo magnético uniforme de módulo \\(B\\), partiendo de un instante inicial en el cual el plano de cada espira es perpendicular a las líneas del campo magnético. Analice las afirmaciones:",
       "descripcion": "Indique Verdadero (V) o Falso (F) para cada afirmación.",
       "opciones": [
         {
@@ -1090,29 +1040,28 @@
         },
         {
           "id": "b",
-          "texto": "Se induce en la bobina una f.e.m. conforme a lo estipulado por la ley integral de Ampere.",
-          "correcta": false
+          "texto": "Se induce en la bobina una f.e.m. conforme a lo estipulado por la ley integral de Ampère."
         },
         {
           "id": "c",
-          "texto": "Si el bobinado constituye un circuito cerrado de resistencia R e inductancia despreciable, circula por el mismo una corriente alterna de intensidad máxima Im = (N·B·A·ω)/R.",
+          "texto": "Si el bobinado constituye un circuito cerrado de resistencia \\(R\\) e inductancia despreciable, circula por el mismo una corriente alterna de intensidad máxima \\( I_m = \\frac{N B A \\omega}{R} \\).",
           "correcta": true
         }
       ]
     },
     {
       "id": 51,
-      "enunciado": "En un circuito existe una corriente que produce un campo magnético ligado al propio circuito. Cualquier circuito en el que exista una corriente variable producirá una f.e.m. autoinducida. Analice las afirmaciones:",
+      "enunciado": "En un circuito existe una corriente que produce un campo magnético ligado al propio circuito, generando una f.e.m. autoinducida. Analice las afirmaciones:",
       "descripcion": "Indique Verdadero (V) o Falso (F) para cada afirmación.",
       "opciones": [
         {
           "id": "a",
-          "texto": "Se denomina coeficiente de autoinducción L al cociente entre el flujo propio Φ y la intensidad i.",
+          "texto": "Se denomina coeficiente de autoinducción \\(L\\) al cociente entre el flujo propio \\(\\Phi\\) y la intensidad \\(i\\): \\( L = \\frac{\\Phi}{i} \\).",
           "correcta": true
         },
         {
           "id": "b",
-          "texto": "Para un solenoide de N espiras, de longitud l y de sección S, recorrido por una corriente i, se tiene que L = Φ/i = µ0·N²·S/l.",
+          "texto": "Para un solenoide de \\(N\\) espiras, de longitud \\(l\\) y de sección \\(S\\), recorrido por una corriente \\(i\\), se tiene que: \\( L = \\frac{\\Phi}{i} = \\frac{\\mu_0 N^2 S}{l} \\).",
           "correcta": true
         },
         {
@@ -1134,8 +1083,7 @@
         },
         {
           "id": "b",
-          "texto": "El campo eléctrico inducido magnéticamente dentro de las bobinas del inductor es conservativo.",
-          "correcta": false
+          "texto": "El campo eléctrico inducido magnéticamente dentro de las bobinas del inductor es conservativo."
         },
         {
           "id": "c",
@@ -1151,7 +1099,7 @@
       "opciones": [
         {
           "id": "a",
-          "texto": "Al cerrar S1 (en t=0), la caída de potencial en la resistencia es cero.",
+          "texto": "Al cerrar \\(S_1\\) (en \\(t=0\\)), la caída de potencial en la resistencia es cero.",
           "correcta": true
         },
         {
@@ -1161,8 +1109,7 @@
         },
         {
           "id": "c",
-          "texto": "Mientras más chica sea la resistencia, la inductancia se carga más rápidamente.",
-          "correcta": false
+          "texto": "Mientras más chica sea la resistencia, la inductancia se carga más rápidamente."
         }
       ]
     },
@@ -1173,18 +1120,16 @@
       "opciones": [
         {
           "id": "a",
-          "texto": "La dirección y sentido de los vectores B, H y M en el interior de la barra es el mismo.",
-          "correcta": false
+          "texto": "La dirección y sentido de los vectores \\(\\vec{B}\\), \\(\\vec{H}\\) y \\(\\vec{M}\\) en el interior de la barra es el mismo."
         },
         {
           "id": "b",
-          "texto": "El vector M en el exterior de la barra no existe.",
+          "texto": "El vector \\(\\vec{M}\\) en el exterior de la barra no existe.",
           "correcta": true
         },
         {
           "id": "c",
-          "texto": "Las corrientes de conducción y de magnetización en la barra tienen distinto sentido.",
-          "correcta": false
+          "texto": "Las corrientes de conducción y de magnetización en la barra tienen distinto sentido."
         }
       ]
     },
@@ -1195,12 +1140,12 @@
       "opciones": [
         {
           "id": "a",
-          "texto": "La dirección y sentido de los vectores B, H y M en el interior de la barra no es el mismo.",
+          "texto": "La dirección y sentido de los vectores \\(\\vec{B}\\), \\(\\vec{H}\\) y \\(\\vec{M}\\) en el interior de la barra no es el mismo.",
           "correcta": true
         },
         {
           "id": "b",
-          "texto": "La dirección y sentido de los vectores B y H en el exterior de la barra es el mismo.",
+          "texto": "La dirección y sentido de los vectores \\(\\vec{B}\\) y \\(\\vec{H}\\) en el exterior de la barra es el mismo.",
           "correcta": true
         },
         {
@@ -1212,44 +1157,41 @@
     },
     {
       "id": 56,
-      "enunciado": "Siguiendo el modelo atómico de Ampere, se supone que todo material está formado por un conjunto de 'microscópico circuitos' con corriente magnetizante Im, que pueden ser considerados como 'pseudo dipolos'. Analice las afirmaciones (primera variante):",
+      "enunciado": "Siguiendo el modelo atómico de Ampère, se supone que todo material está formado por un conjunto de 'microscópico circuitos' con corriente magnetizante \\(I_m\\). Analice las afirmaciones (primera variante):",
       "descripcion": "Indique Verdadero (V) o Falso (F) para cada afirmación.",
       "opciones": [
         {
           "id": "a",
-          "texto": "El momento dipolar magnético se define como: µ = Im·dS·n̂.",
+          "texto": "El momento dipolar magnético se define como: \\( \\vec{\\mu} = I_m \\, dS \\, \\hat{n} \\).",
           "correcta": true
         },
         {
           "id": "b",
-          "texto": "El vector Magnetización es: M = (Σµi)/dS.",
-          "correcta": false
+          "texto": "El vector Magnetización es: \\( \\vec{M} = \\frac{\\sum_{i=1}^{N} \\vec{\\mu}_i}{dS} \\)."
         },
         {
           "id": "c",
-          "texto": "El vector Excitación Magnética se define como: H = B/µ0 + M.",
-          "correcta": false
+          "texto": "El vector Excitación Magnética se define como: \\( \\vec{H} = \\frac{\\vec{B}}{\\mu_0} + \\vec{M} \\)."
         }
       ]
     },
     {
       "id": 57,
-      "enunciado": "Siguiendo el modelo atómico de Ampere, todo material está formado por 'microscópico circuitos' con corriente magnetizante Im. Analice las afirmaciones (segunda variante):",
+      "enunciado": "Siguiendo el modelo atómico de Ampère, todo material está formado por 'microscópico circuitos' con corriente magnetizante \\(I_m\\). Analice las afirmaciones (segunda variante):",
       "descripcion": "Indique Verdadero (V) o Falso (F) para cada afirmación.",
       "opciones": [
         {
           "id": "a",
-          "texto": "El momento dipolar magnético se define como: µ = Im·dV·n̂.",
-          "correcta": false
+          "texto": "El momento dipolar magnético se define como: \\( \\vec{\\mu} = I_m \\, dV \\, \\hat{n} \\)."
         },
         {
           "id": "b",
-          "texto": "El vector Magnetización es: M = (Σµi)/dV.",
+          "texto": "El vector Magnetización es: \\( \\vec{M} = \\frac{\\sum_{i=1}^{N} \\vec{\\mu}_i}{dV} \\).",
           "correcta": true
         },
         {
           "id": "c",
-          "texto": "El vector Excitación Magnética se define como: H = B/µ0 − M.",
+          "texto": "El vector Excitación Magnética se define como: \\( \\vec{H} = \\frac{\\vec{B}}{\\mu_0} - \\vec{M} \\).",
           "correcta": true
         }
       ]
@@ -1266,13 +1208,11 @@
         },
         {
           "id": "b",
-          "texto": "Estar presente en todos los medios materiales, siendo dominante en los materiales paramagnéticos.",
-          "correcta": false
+          "texto": "Estar presente en todos los medios materiales, siendo dominante en los materiales paramagnéticos."
         },
         {
           "id": "c",
-          "texto": "Depender de la existencia de dominios magnéticos, consistentes en regiones microscópicas de la estructura cristalina, en el cual los momentos magnéticos atómicos están orientados espontáneamente hasta la condición de saturación.",
-          "correcta": false
+          "texto": "Depender de la existencia de dominios magnéticos, consistentes en regiones microscópicas de la estructura cristalina en el cual los momentos magnéticos atómicos están orientados espontáneamente hasta la condición de saturación."
         }
       ]
     },
@@ -1288,8 +1228,7 @@
         },
         {
           "id": "b",
-          "texto": "Funciones lineales que relacionan los vectores campo magnético y excitación magnética (B vs H), y por lo tanto, ausencia de histéresis magnética.",
-          "correcta": false
+          "texto": "Funciones lineales que relacionan los vectores campo magnético y excitación magnética (\\(B\\) vs \\(H\\)), y por lo tanto, ausencia de histéresis magnética."
         },
         {
           "id": "c",
@@ -1300,23 +1239,21 @@
     },
     {
       "id": 60,
-      "enunciado": "Siguiendo el modelo atómico de Ampere, todo material está formado por 'microscópico circuitos' con corriente magnetizante Im. Analice las afirmaciones (tercera variante):",
+      "enunciado": "Siguiendo el modelo atómico de Ampère, todo material está formado por 'microscópico circuitos' con corriente magnetizante \\(I_m\\). Analice las afirmaciones (tercera variante):",
       "descripcion": "Indique Verdadero (V) o Falso (F) para cada afirmación.",
       "opciones": [
         {
           "id": "a",
-          "texto": "El momento dipolar magnético se define como: µ = Im·dS·n̂.",
+          "texto": "El momento dipolar magnético se define como: \\( \\vec{\\mu} = I_m \\, dS \\, \\hat{n} \\).",
           "correcta": true
         },
         {
           "id": "b",
-          "texto": "El vector Magnetización es: M = (Σµi)/dS.",
-          "correcta": false
+          "texto": "El vector Magnetización es: \\( \\vec{M} = \\frac{\\sum_{i=1}^{N} \\vec{\\mu}_i}{dS} \\)."
         },
         {
           "id": "c",
-          "texto": "El vector Excitación Magnética se define como: H = B/µ0 + M.",
-          "correcta": false
+          "texto": "El vector Excitación Magnética se define como: \\( \\vec{H} = \\frac{\\vec{B}}{\\mu_0} + \\vec{M} \\)."
         }
       ]
     },
@@ -1332,8 +1269,7 @@
         },
         {
           "id": "b",
-          "texto": "Introducir la barra dentro de una bobina plana por la que circula CC y dejarla allí cierto tiempo t.",
-          "correcta": false
+          "texto": "Introducir la barra dentro de una bobina plana por la que circula CC y dejarla allí cierto tiempo \\(t\\)."
         },
         {
           "id": "c",
@@ -1349,18 +1285,20 @@
       "opciones": [
         {
           "id": "a",
-          "texto": "La susceptibilidad magnética relativa es ligeramente menor a cero.",
-          "correcta": false
+          "texto": "La susceptibilidad magnética relativa \\(\\chi_m\\) es ligeramente menor a cero."
         },
         {
           "id": "b",
-          "texto": "Los electrones giran de modo que el momento dipolar magnético resultante es cero cuando el material no está sometido a un campo magnético externo.",
-          "correcta": false
+          "texto": "Los electrones giran de modo que el momento dipolar magnético resultante es cero cuando el material no está sometido a un campo magnético externo."
         },
         {
           "id": "c",
-          "texto": "La corriente magnetizante tiene un sentido contrario a la corriente de conducción.",
-          "correcta": false
+          "texto": "La corriente magnetizante tiene un sentido contrario a la corriente de conducción."
+        },
+        {
+          "id": "d",
+          "texto": "Ninguna de las afirmaciones es correcta.",
+          "correcta": true
         }
       ]
     },
@@ -1371,39 +1309,35 @@
       "opciones": [
         {
           "id": "a",
-          "texto": "La fuerza magneto-motriz depende de los componentes del núcleo.",
-          "correcta": false
+          "texto": "La fuerza magneto-motriz depende de los componentes del núcleo."
         },
         {
           "id": "b",
-          "texto": "La excitación magnética es función de la permeabilidad magnética relativa de los componentes del núcleo.",
-          "correcta": false
+          "texto": "La excitación magnética es función de la permeabilidad magnética relativa de los componentes del núcleo."
         },
         {
           "id": "c",
-          "texto": "La reluctancia magnética se mide en A/Wb o frecuentemente en Av/Wb.",
+          "texto": "La reluctancia magnética se mide en \\(\\text{A/Wb}\\) o frecuentemente en \\(\\text{Av/Wb}\\).",
           "correcta": true
         }
       ]
     },
     {
       "id": 64,
-      "enunciado": "En un circuito magnético integrado por un bobinado toroidal de N espiras que transportan una corriente de intensidad I se tiene que:",
+      "enunciado": "En un circuito magnético integrado por un bobinado toroidal de \\(N\\) espiras que transportan una corriente de intensidad \\(I\\) se tiene que:",
       "descripcion": "Indique Verdadero (V) o Falso (F) para cada afirmación.",
       "opciones": [
         {
           "id": "a",
-          "texto": "La fuerza magnetomotriz del circuito depende del cuadrado del número de espiras N² y de la intensidad de corriente I.",
-          "correcta": false
+          "texto": "La fuerza magnetomotriz del circuito depende del cuadrado del número de espiras \\(N^2\\) y de la intensidad de corriente \\(I\\)."
         },
         {
           "id": "b",
-          "texto": "Según la ley de Hopkinson, el campo magnético en el interior del bobinado es igual al cociente entre la fuerza magnetomotriz del bobinado y la reluctancia del circuito magnético.",
-          "correcta": false
+          "texto": "Según la ley de Hopkinson, el campo magnético en el interior del bobinado es igual al cociente entre la fuerza magnetomotriz del bobinado y la reluctancia del circuito magnético."
         },
         {
           "id": "c",
-          "texto": "La reluctancia del circuito magnético, si éste está integrado por dos tramos de diferentes materiales, es igual a la suma de las reluctancias de cada uno de los tramos.",
+          "texto": "La reluctancia del circuito magnético, si éste está integrado por dos tramos de diferentes materiales, es igual a la suma de las reluctancias de cada uno de los tramos: \\( \\mathcal{R}_{total} = \\mathcal{R}_1 + \\mathcal{R}_2 \\).",
           "correcta": true
         }
       ]
@@ -1415,7 +1349,7 @@
       "opciones": [
         {
           "id": "a",
-          "texto": "La reluctancia equivalente es igual a la suma de las inversas de las reluctancias individuales de cada circuito.",
+          "texto": "La reluctancia equivalente es igual a la suma de las inversas de las reluctancias individuales de cada circuito: \\( \\frac{1}{\\mathcal{R}_{eq}} = \\frac{1}{\\mathcal{R}_1} + \\frac{1}{\\mathcal{R}_2} \\).",
           "correcta": true
         },
         {
@@ -1425,8 +1359,7 @@
         },
         {
           "id": "c",
-          "texto": "En el aire se presenta el mayor valor de reluctancia magnética.",
-          "correcta": false
+          "texto": "En el aire se presenta el mayor valor de reluctancia magnética."
         }
       ]
     },
@@ -1437,17 +1370,15 @@
       "opciones": [
         {
           "id": "a",
-          "texto": "La susceptibilidad magnética relativa es ligeramente mayor a cero.",
-          "correcta": false
+          "texto": "La susceptibilidad magnética relativa \\(\\chi_m\\) es ligeramente mayor a cero."
         },
         {
           "id": "b",
-          "texto": "La permeabilidad magnética relativa es independiente de la temperatura.",
-          "correcta": false
+          "texto": "La permeabilidad magnética relativa es independiente de la temperatura."
         },
         {
           "id": "c",
-          "texto": "El vector magnetización es opuesto al vector excitación magnética.",
+          "texto": "El vector magnetización \\(\\vec{M}\\) es opuesto al vector excitación magnética \\(\\vec{H}\\).",
           "correcta": true
         }
       ]
