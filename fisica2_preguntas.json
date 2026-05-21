@@ -41,11 +41,6 @@
           "id": "c",
           "texto": "El campo magnético es máximo a una distancia x = a/√2 del centro de la espira, sobre su eje.",
           "correcta": false
-        },
-        {
-          "id": "d",
-          "texto": "Ninguna de las afirmaciones es correcta.",
-          "correcta": true
         }
       ]
     },
@@ -222,11 +217,6 @@
           "id": "c",
           "texto": "Suponga 2 alambres paralelos que conducen corrientes como indica la figura. El campo total en el punto P3 tiene un módulo igual a B3 = µ0·I/(3πd).",
           "correcta": false
-        },
-        {
-          "id": "d",
-          "texto": "Ninguna de las afirmaciones es correcta.",
-          "correcta": true
         }
       ]
     },
@@ -293,11 +283,6 @@
           "id": "c",
           "texto": "La trayectoria que describe el electrón es parabólica de sentido horario.",
           "correcta": false
-        },
-        {
-          "id": "d",
-          "texto": "Ninguna de las afirmaciones es correcta.",
-          "correcta": true
         }
       ]
     },
@@ -342,11 +327,6 @@
           "id": "c",
           "texto": "El momento magnético depende del valor del campo magnético.",
           "correcta": false
-        },
-        {
-          "id": "d",
-          "texto": "Ninguna de las afirmaciones es correcta.",
-          "correcta": true
         }
       ]
     },
@@ -391,11 +371,6 @@
           "id": "c",
           "texto": "Son perpendiculares al campo B en cualquier punto.",
           "correcta": false
-        },
-        {
-          "id": "d",
-          "texto": "Ninguna de las afirmaciones es correcta.",
-          "correcta": true
         }
       ]
     },
@@ -462,11 +437,6 @@
           "id": "c",
           "texto": "La fuerza resultante es proporcional al producto escalar del vector velocidad de la carga y el vector campo magnético.",
           "correcta": false
-        },
-        {
-          "id": "d",
-          "texto": "Ninguna de las afirmaciones es correcta.",
-          "correcta": true
         }
       ]
     },
@@ -511,11 +481,6 @@
           "id": "c",
           "texto": "Genera un campo B el cual es proporcional al cuadrado de dicha corriente.",
           "correcta": false
-        },
-        {
-          "id": "d",
-          "texto": "Ninguna de las afirmaciones es correcta.",
-          "correcta": true
         }
       ]
     },
@@ -780,11 +745,6 @@
           "id": "c",
           "texto": "Para la deducción del campo magnético en P se utiliza la Ley de Ampere.",
           "correcta": false
-        },
-        {
-          "id": "d",
-          "texto": "Ninguna de las afirmaciones es correcta.",
-          "correcta": true
         }
       ]
     },
@@ -1401,11 +1361,6 @@
           "id": "c",
           "texto": "La corriente magnetizante tiene un sentido contrario a la corriente de conducción.",
           "correcta": false
-        },
-        {
-          "id": "d",
-          "texto": "Ninguna de las afirmaciones es correcta.",
-          "correcta": true
         }
       ]
     },

@@ -22,7 +22,7 @@ const fallbackQuestions = [
     {
         id: 1,
         enunciado: "Cual de las siguientes magnitudes es vectorial?",
-        descripcion: "Selecciona una sola opcion.",
+        descripcion: "",
         opciones: [
             { id: "a", texto: "Masa" },
             { id: "b", texto: "Temperatura" },
@@ -33,7 +33,7 @@ const fallbackQuestions = [
     {
         id: 2,
         enunciado: "Cuales de estas unidades pertenecen al Sistema Internacional?",
-        descripcion: "Esta pregunta acepta multiples respuestas.",
+        descripcion: "",
         opciones: [
             { id: "a", texto: "Metro", correcta: true },
             { id: "b", texto: "Segundo", correcta: true },
@@ -178,11 +178,10 @@ function normalizeQuestion(question, index) {
         }))
         .filter((option) => option.texto || option.imagen);
 
-    if (!options.length || !options.some((option) => option.correcta)) {
+    if (!options.length) {
         return null;
     }
 
-    const multipleCorrect = options.filter((option) => option.correcta).length > 1;
     const questionId = question.id ?? index + 1;
     const questionImage = resolveQuestionImagePath(question.imagen, questionId);
 
@@ -193,7 +192,6 @@ function normalizeQuestion(question, index) {
         imagen: questionImage,
         imagenAlt: repairMojibake(question.imagenAlt ?? question.enunciado ?? `Imagen de la pregunta ${index + 1}`),
         descripcionImagen: repairMojibake(question.descripcionImagen ?? null),
-        multipleCorrect,
         opciones: options
     };
 }
@@ -218,49 +216,51 @@ function renderQuestion() {
         return;
     }
 
-    const selectedAnswers = state.userAnswers[question.id] ?? [];
-    const inputType = question.multipleCorrect ? "checkbox" : "radio";
-    const markerShape = question.multipleCorrect ? "multiple" : "single";
+    const selectedAnswers = state.userAnswers[question.id] ?? {};
     const hasQuestionImage = Boolean(question.imagen);
 
     elements.questionCounter.textContent = `Pregunta ${state.currentQuestionIndex + 1} de ${state.questions.length}`;
-    elements.questionMode.textContent = question.multipleCorrect
-        ? "Respuesta multiple"
-        : "Respuesta unica";
+    elements.questionMode.textContent = "Verdadero / Falso";
     elements.progressBar.style.width = `${((state.currentQuestionIndex + 1) / state.questions.length) * 100}%`;
     elements.questionContainer.className = `question-container${hasQuestionImage ? " has-question-image" : ""}`;
 
     elements.questionContainer.innerHTML = `
         <div class="question-wrapper">
             <header class="question-header">
-                <h2>${escapeHtml(question.enunciado)}</h2>
-                ${question.descripcion ? `<p>${escapeHtml(question.descripcion)}</p>` : ""}
+                <h2>${renderFormattedText(question.enunciado)}</h2>
+                ${question.descripcion ? `<p>${renderFormattedText(question.descripcion)}</p>` : ""}
             </header>
 
             <div class="options-list">
                 ${question.opciones.map((option, optionIndex) => `
                     <div class="option-card">
-                        <input
-                            class="option-input"
-                            id="question-${question.id}-option-${option.id}"
-                            name="question-${question.id}"
-                            type="${inputType}"
-                            value="${escapeAttribute(option.id)}"
-                            ${selectedAnswers.includes(option.id) ? "checked" : ""}
-                        >
-                        <label
-                            class="option-label ${selectedAnswers.includes(option.id) ? "selected" : ""}"
-                            for="question-${question.id}-option-${option.id}"
-                        >
+                        <div class="option-label">
                             <div class="option-topline">
-                                <span class="option-marker ${markerShape}">X</span>
                                 <span class="option-text">
                                     <strong>${String.fromCharCode(65 + optionIndex)}.</strong>
-                                    ${option.texto ? escapeHtml(option.texto) : ""}
+                                    ${option.texto ? renderFormattedText(option.texto) : ""}
                                 </span>
                             </div>
                             ${renderFigure(option.imagen, option.imagenAlt, option.descripcionImagen, "option-figure")}
-                        </label>
+                            <div class="option-answer-buttons" role="group" aria-label="Respuesta para la opcion ${String.fromCharCode(65 + optionIndex)}">
+                                <button
+                                    class="answer-toggle ${selectedAnswers[option.id] === true ? "selected true" : ""}"
+                                    data-option-id="${escapeAttribute(option.id)}"
+                                    data-value="true"
+                                    type="button"
+                                >
+                                    Verdadero
+                                </button>
+                                <button
+                                    class="answer-toggle ${selectedAnswers[option.id] === false ? "selected false" : ""}"
+                                    data-option-id="${escapeAttribute(option.id)}"
+                                    data-value="false"
+                                    type="button"
+                                >
+                                    Falso
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 `).join("")}
             </div>
@@ -274,57 +274,60 @@ function renderQuestion() {
     `;
 
     renderQuestionTabs();
-
-
     bindQuestionInputs(question);
     updateNavigationButtons();
     updateFeedbackForCurrentQuestion();
+    typesetMath(elements.questionContainer);
 }
 
 function bindQuestionInputs(question) {
-    const inputs = elements.questionContainer.querySelectorAll(".option-input");
+    const buttons = elements.questionContainer.querySelectorAll(".answer-toggle");
 
-    inputs.forEach((input) => {
-        input.addEventListener("change", () => {
-            const selected = Array.from(inputs)
-                .filter((item) => item.checked)
-                .map((item) => item.value);
+    buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+            const optionId = button.dataset.optionId;
+            const value = button.dataset.value === "true";
 
-            state.userAnswers[question.id] = selected;
-            updateSelectedStyles();
+            state.userAnswers[question.id] = {
+                ...(state.userAnswers[question.id] ?? {}),
+                [optionId]: value
+            };
+
+            delete state.checkedAnswers[question.id];
+            updateSelectedStyles(question);
             clearFeedbackVisibility();
+            renderQuestionTabs();
         });
     });
 }
 
-function updateSelectedStyles() {
-    const labels = elements.questionContainer.querySelectorAll(".option-label");
-    const inputs = elements.questionContainer.querySelectorAll(".option-input");
+function updateSelectedStyles(question) {
+    const selectedAnswers = state.userAnswers[question.id] ?? {};
+    const buttons = elements.questionContainer.querySelectorAll(".answer-toggle");
 
-    labels.forEach((label) => label.classList.remove("selected"));
+    buttons.forEach((button) => {
+        const optionId = button.dataset.optionId;
+        const value = button.dataset.value === "true";
+        const isSelected = selectedAnswers[optionId] === value;
 
-    inputs.forEach((input) => {
-        if (input.checked) {
-            input.nextElementSibling?.classList.add("selected");
-        }
+        button.classList.toggle("selected", isSelected);
+        button.classList.toggle("true", isSelected && value);
+        button.classList.toggle("false", isSelected && !value);
     });
 }
 
 function checkCurrentAnswer() {
     const question = state.questions[state.currentQuestionIndex];
-    const userAnswer = [...(state.userAnswers[question.id] ?? [])].sort();
+    const userAnswer = state.userAnswers[question.id] ?? {};
 
-    if (!userAnswer.length) {
-        showFeedback("Selecciona al menos una respuesta antes de enviar.", "error");
+    const unansweredOptions = question.opciones.filter((option) => typeof userAnswer[option.id] !== "boolean");
+
+    if (unansweredOptions.length) {
+        showFeedback("Debes marcar Verdadero o Falso en todas las opciones antes de enviar.", "error");
         return;
     }
 
-    const correctAnswer = question.opciones
-        .filter((option) => option.correcta)
-        .map((option) => option.id)
-        .sort();
-
-    const isCorrect = arraysMatch(userAnswer, correctAnswer);
+    const isCorrect = question.opciones.every((option) => userAnswer[option.id] === option.correcta);
     state.checkedAnswers[question.id] = {
         isCorrect,
         message: isCorrect
@@ -337,15 +340,11 @@ function checkCurrentAnswer() {
 }
 
 function buildIncorrectMessage(question) {
-    const correctLabels = question.opciones
-        .map((option, index) => ({ ...option, label: String.fromCharCode(65 + index) }))
-        .filter((option) => option.correcta)
-        .map((option) => option.label)
-        .join(", ");
+    const expectedAnswers = question.opciones
+        .map((option, index) => `${String.fromCharCode(65 + index)}: ${option.correcta ? "Verdadero" : "Falso"}`)
+        .join(" | ");
 
-    return question.multipleCorrect
-        ? `Respuesta incorrecta. Las opciones correctas son: ${correctLabels}.`
-        : `Respuesta incorrecta. La opcion correcta es: ${correctLabels}.`;
+    return `Respuesta incorrecta. Correccion: ${expectedAnswers}.`;
 }
 
 function updateFeedbackForCurrentQuestion() {
@@ -362,12 +361,13 @@ function updateFeedbackForCurrentQuestion() {
 
 function clearFeedbackVisibility() {
     elements.feedback.className = "feedback";
-    elements.feedback.textContent = "";
+    elements.feedback.innerHTML = "";
 }
 
 function showFeedback(message, type) {
     elements.feedback.className = `feedback is-visible ${type}`;
-    elements.feedback.textContent = message;
+    elements.feedback.innerHTML = renderFormattedText(message);
+    typesetMath(elements.feedback);
 }
 
 function changeQuestion(direction) {
@@ -390,7 +390,7 @@ function renderEmptyState(message) {
     elements.questionCounter.textContent = "Pregunta 0 de 0";
     elements.questionMode.textContent = "Sin contenido";
     elements.progressBar.style.width = "0%";
-    elements.questionContainer.innerHTML = `<p class="empty-state">${escapeHtml(message)}</p>`;
+    elements.questionContainer.innerHTML = `<p class="empty-state">${renderFormattedText(message)}</p>`;
     elements.prevButton.disabled = true;
     elements.nextButton.disabled = true;
     elements.checkButton.disabled = true;
@@ -405,15 +405,10 @@ function renderFigure(image, alt, caption, className) {
     return `
         <figure class="${className}">
             <img src="${escapeAttribute(image)}" alt="${escapeAttribute(alt ?? "")}">
-            ${caption ? `<figcaption>${escapeHtml(caption)}</figcaption>` : ""}
+            ${caption ? `<figcaption>${renderFormattedText(caption)}</figcaption>` : ""}
         </figure>
     `;
 }
-
-function arraysMatch(first, second) {
-    return first.length === second.length && first.every((value, index) => value === second[index]);
-}
-
 
 function renderQuestionTabs() {
     const tabs = state.questions.map((question, index) => {
@@ -459,6 +454,40 @@ function escapeHtml(text) {
 
 function escapeAttribute(text) {
     return escapeHtml(text);
+}
+
+function renderFormattedText(text) {
+    return escapeHtml(text).replace(/\r?\n/g, "<br>");
+}
+
+function typesetMath(container) {
+    if (!container) {
+        return;
+    }
+
+    if (!window.MathJax?.typesetPromise) {
+        bindMathJaxLoadHandler();
+        return;
+    }
+
+    window.MathJax.typesetClear?.([container]);
+    window.MathJax.typesetPromise([container]).catch((error) => {
+        console.warn("No se pudo renderizar MathJax:", error);
+    });
+}
+
+function bindMathJaxLoadHandler() {
+    const script = document.getElementById("mathjax-script");
+
+    if (!script || script.dataset.bound === "true") {
+        return;
+    }
+
+    script.dataset.bound = "true";
+    script.addEventListener("load", () => {
+        typesetMath(elements.questionContainer);
+        typesetMath(elements.feedback);
+    }, { once: true });
 }
 
 function repairMojibake(value) {
