@@ -180,8 +180,7 @@
         },
         {
           "id": "c",
-          "texto": "La integral \\( \\int_A^B \\vec{B} \\cdot d\\vec{l} \\) dará cero siempre que el límite inferior 'A' y el superior 'B' sean iguales.",
-          "correcta": true
+          "texto": "La integral \\( \\int_A^B \\vec{B} \\cdot d\\vec{l} \\) dará cero siempre que el límite inferior 'A' y el superior 'B' sean iguales."
         }
       ]
     },
@@ -216,7 +215,7 @@
         {
           "id": "b",
           "texto": "Se encuentra en equilibrio cuando la espira está ubicada en forma perpendicular a las líneas magnéticas de dicho campo.",
-          "correcta": false
+          "correcta": true
         },
         {
           "id": "c",
@@ -452,7 +451,8 @@
         },
         {
           "id": "b",
-          "texto": "Se encuentra en equilibrio cuando la espira está ubicada en forma perpendicular a las líneas magnéticas de dicho campo."
+          "texto": "Se encuentra en equilibrio cuando la espira está ubicada en forma perpendicular a las líneas magnéticas de dicho campo.",
+          "correcta": true
         },
         {
           "id": "c",
@@ -592,12 +592,12 @@
       "opciones": [
         {
           "id": "a",
-          "texto": "La fuerza de origen magnético sobre el conductor 2 no es nula e igual a la del conductor 1."
+          "texto": "La fuerza de origen magnético sobre el conductor 2 no es nula e igual a la del conductor 1.",
+          "correcta": true
         },
         {
           "id": "b",
-          "texto": "La fuerza de origen magnético sobre el conductor 1 es nula.",
-          "correcta": true
+          "texto": "La fuerza de origen magnético sobre el conductor 1 es nula."
         },
         {
           "id": "c",
@@ -937,8 +937,7 @@
       "opciones": [
         {
           "id": "a",
-          "texto": "En la espira se induce una corriente con sentido antihorario.",
-          "correcta": true
+          "texto": "En la espira se induce una corriente con sentido antihorario."
         },
         {
           "id": "b",
@@ -1255,7 +1254,8 @@
         },
         {
           "id": "b",
-          "texto": "Los electrones giran de modo que el momento dipolar magnético resultante es cero cuando el material no está sometido a un campo magnético externo."
+          "texto": "Los electrones giran de modo que el momento dipolar magnético resultante es cero cuando el material no está sometido a un campo magnético externo.",
+          "correcta": true
         },
         {
           "id": "c",
@@ -1320,7 +1320,8 @@
         },
         {
           "id": "c",
-          "texto": "En el aire se presenta el mayor valor de reluctancia magnética."
+          "texto": "En el aire se presenta el mayor valor de reluctancia magnética.",
+          "correcta": true
         }
       ]
     },
@@ -1335,7 +1336,8 @@
         },
         {
           "id": "b",
-          "texto": "La permeabilidad magnética relativa es independiente de la temperatura."
+          "texto": "La permeabilidad magnética relativa es independiente de la temperatura.",
+          "correcta": true
         },
         {
           "id": "c",
